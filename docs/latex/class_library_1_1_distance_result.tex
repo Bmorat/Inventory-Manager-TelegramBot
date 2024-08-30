@@ -1,0 +1,137 @@
+\doxysection{Library.\+Distance\+Result Class Reference}
+\hypertarget{class_library_1_1_distance_result}{}\label{class_library_1_1_distance_result}\index{Library.DistanceResult@{Library.DistanceResult}}
+
+
+Una implementación concreta del resutlado de calcular distancias. Además de las propiedades definidas en \doxylink{interface_library_1_1_i_distance_result}{IDistance\+Result} esta clase agrega propiedades para acceder a las coordenadas de las direcciones buscadas.  
+
+
+Inheritance diagram for Library.\+Distance\+Result\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_library_1_1_distance_result}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_library_1_1_distance_result_a9f238cf27a4bb112519f2a21bb365064}{Distance\+Result}} (\mbox{\hyperlink{class_library_1_1_location}{Location}} from, \mbox{\hyperlink{class_library_1_1_location}{Location}} to, double distance, double time)
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de \doxylink{class_library_1_1_distance_result}{Distance\+Result} a partir de dos coordenadas, la distancia y el tiempo entre ellas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_library_1_1_distance_result_a3655578f1016c12c28bb269cfa9ec19c}{From\+Exists}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene un valor que indica si la dirección de origen para el cálculo de distancias existe; sólo se puede calcular la distancia entre direcciones que existen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_library_1_1_distance_result_ac02e76ad490f770ed4195b065a7b7475}{To\+Exists}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene un valor que indica si la dirección de destino para el cálculo de distancias existe; sólo se puede calcular la distancia entre direcciones que existen. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_library_1_1_distance_result_aae0cf1ed2504c1c0664de7526c9d29bd}{Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em La distancia calculada. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_library_1_1_distance_result_a4380d8e7fbe9c9f22ea09e3d3b0fdaee}{Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em El tiempo en llegar del origen al destino. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_library_1_1_location}{Location}} \mbox{\hyperlink{class_library_1_1_distance_result_aebbf5b2db57126f85b3776bfa589caab}{From}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_library_1_1_location}{Location}} \mbox{\hyperlink{class_library_1_1_distance_result_ae66200398c457667fe4000e578d2fcca}{To}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_library_1_1_i_distance_result}{Library.\+IDistance\+Result}}}
+
+
+\doxysubsection{Detailed Description}
+Una implementación concreta del resutlado de calcular distancias. Además de las propiedades definidas en \doxylink{interface_library_1_1_i_distance_result}{IDistance\+Result} esta clase agrega propiedades para acceder a las coordenadas de las direcciones buscadas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_library_1_1_distance_result_a9f238cf27a4bb112519f2a21bb365064}\index{Library.DistanceResult@{Library.DistanceResult}!DistanceResult@{DistanceResult}}
+\index{DistanceResult@{DistanceResult}!Library.DistanceResult@{Library.DistanceResult}}
+\doxysubsubsection{\texorpdfstring{DistanceResult()}{DistanceResult()}}
+{\footnotesize\ttfamily \label{class_library_1_1_distance_result_a9f238cf27a4bb112519f2a21bb365064} 
+Library.\+Distance\+Result.\+Distance\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_location}{Location}}}]{from}{, }\item[{\mbox{\hyperlink{class_library_1_1_location}{Location}}}]{to}{, }\item[{double}]{distance}{, }\item[{double}]{time}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa una nueva instancia de \doxylink{class_library_1_1_distance_result}{Distance\+Result} a partir de dos coordenadas, la distancia y el tiempo entre ellas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & Las coordenadas de origen.\\
+\hline
+{\em to} & Las coordenadas de destino.\\
+\hline
+{\em distance} & La distancia entre las coordenadas.\\
+\hline
+{\em time} & El tiempo que se demora en llegar del origen al destino.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_library_1_1_distance_result_aae0cf1ed2504c1c0664de7526c9d29bd}\index{Library.DistanceResult@{Library.DistanceResult}!Distance@{Distance}}
+\index{Distance@{Distance}!Library.DistanceResult@{Library.DistanceResult}}
+\doxysubsubsection{\texorpdfstring{Distance}{Distance}}
+{\footnotesize\ttfamily \label{class_library_1_1_distance_result_aae0cf1ed2504c1c0664de7526c9d29bd} 
+double Library.\+Distance\+Result.\+Distance\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+La distancia calculada. 
+
+
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_distance_result_a57872b2f4cb03073cb5b3a93de2187bd}{Library.\+IDistance\+Result}}.
+
+\Hypertarget{class_library_1_1_distance_result_aebbf5b2db57126f85b3776bfa589caab}\index{Library.DistanceResult@{Library.DistanceResult}!From@{From}}
+\index{From@{From}!Library.DistanceResult@{Library.DistanceResult}}
+\doxysubsubsection{\texorpdfstring{From}{From}}
+{\footnotesize\ttfamily \label{class_library_1_1_distance_result_aebbf5b2db57126f85b3776bfa589caab} 
+\mbox{\hyperlink{class_library_1_1_location}{Location}} Library.\+Distance\+Result.\+From\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_library_1_1_distance_result_a3655578f1016c12c28bb269cfa9ec19c}\index{Library.DistanceResult@{Library.DistanceResult}!FromExists@{FromExists}}
+\index{FromExists@{FromExists}!Library.DistanceResult@{Library.DistanceResult}}
+\doxysubsubsection{\texorpdfstring{FromExists}{FromExists}}
+{\footnotesize\ttfamily \label{class_library_1_1_distance_result_a3655578f1016c12c28bb269cfa9ec19c} 
+bool Library.\+Distance\+Result.\+From\+Exists\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Obtiene un valor que indica si la dirección de origen para el cálculo de distancias existe; sólo se puede calcular la distancia entre direcciones que existen. 
+
+
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_distance_result_a0bd018226a9d74b98a68d09313c105a7}{Library.\+IDistance\+Result}}.
+
+\Hypertarget{class_library_1_1_distance_result_a4380d8e7fbe9c9f22ea09e3d3b0fdaee}\index{Library.DistanceResult@{Library.DistanceResult}!Time@{Time}}
+\index{Time@{Time}!Library.DistanceResult@{Library.DistanceResult}}
+\doxysubsubsection{\texorpdfstring{Time}{Time}}
+{\footnotesize\ttfamily \label{class_library_1_1_distance_result_a4380d8e7fbe9c9f22ea09e3d3b0fdaee} 
+double Library.\+Distance\+Result.\+Time\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+El tiempo en llegar del origen al destino. 
+
+
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_distance_result_a89031b536fc7956ffe11700043694a7b}{Library.\+IDistance\+Result}}.
+
+\Hypertarget{class_library_1_1_distance_result_ae66200398c457667fe4000e578d2fcca}\index{Library.DistanceResult@{Library.DistanceResult}!To@{To}}
+\index{To@{To}!Library.DistanceResult@{Library.DistanceResult}}
+\doxysubsubsection{\texorpdfstring{To}{To}}
+{\footnotesize\ttfamily \label{class_library_1_1_distance_result_ae66200398c457667fe4000e578d2fcca} 
+\mbox{\hyperlink{class_library_1_1_location}{Location}} Library.\+Distance\+Result.\+To\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_library_1_1_distance_result_ac02e76ad490f770ed4195b065a7b7475}\index{Library.DistanceResult@{Library.DistanceResult}!ToExists@{ToExists}}
+\index{ToExists@{ToExists}!Library.DistanceResult@{Library.DistanceResult}}
+\doxysubsubsection{\texorpdfstring{ToExists}{ToExists}}
+{\footnotesize\ttfamily \label{class_library_1_1_distance_result_ac02e76ad490f770ed4195b065a7b7475} 
+bool Library.\+Distance\+Result.\+To\+Exists\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Obtiene un valor que indica si la dirección de destino para el cálculo de distancias existe; sólo se puede calcular la distancia entre direcciones que existen. 
+
+
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_distance_result_a2a005dfb0c6571417937cb8c1257983e}{Library.\+IDistance\+Result}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\+Locations/\mbox{\hyperlink{_distance_calculator_8cs}{Distance\+Calculator.\+cs}}\end{DoxyCompactItemize}

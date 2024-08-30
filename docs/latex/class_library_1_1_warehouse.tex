@@ -1,0 +1,271 @@
+\doxysection{Library.\+Warehouse Class Reference}
+\hypertarget{class_library_1_1_warehouse}{}\label{class_library_1_1_warehouse}\index{Library.Warehouse@{Library.Warehouse}}
+
+
+Representa un almacén que implementa el patrón de diseño Observer para que podamos saber sobre los movimientos en stock(ventas) Es un Creator de \doxylink{class_library_1_1_item}{Item} y \doxylink{class_library_1_1_section}{Section} dado que los items tienen una categoría que corresponde a una sección dentro del depósito.  
+
+
+Inheritance diagram for Library.\+Warehouse\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_library_1_1_warehouse}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_acc328c436b186bd32e632cc5f5df8fff}{Subscribe}} (\mbox{\hyperlink{interface_library_1_1_i_observer}{IObserver}} observer)
+\begin{DoxyCompactList}\small\item\em Suscribe un observador al almacén. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_a2f5b88e0508021fabc7a507507f78aeb}{Notify\+Observers}} ()
+\begin{DoxyCompactList}\small\item\em Notifica a todos los observadores suscritos de un cambio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_af35009087af9c65763a4e3eb0baf6c84}{Add\+Section}} (\mbox{\hyperlink{class_library_1_1_section}{Section}} section)
+\begin{DoxyCompactList}\small\item\em Agrega una nueva sección al almacén. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_library_1_1_warehouse_aa0aaaaf204067e522b4da9b65fe42cd8}{Warehouse}} (string name)
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de la clase \doxylink{class_library_1_1_warehouse}{Warehouse} con el nombre especificado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_ae11b12d085fd637aeb120565e7b164fe}{Agregar\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Agrega un nuevo ítem a una sección del almacén. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_a6b0d14552fc9a3ebf0354f84df14ac0a}{Remover\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Remueve un ítem de una sección del almacén. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_aa0f44983352f33a0c53afeeec3616bc1}{Show\+Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Muestra el inventario del almacén. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_library_1_1_sells}{Sells}} \mbox{\hyperlink{class_library_1_1_warehouse_a2ad7e7691f68e291d9e358f9e7f62874}{Sell\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Vende un ítem de una sección del almacén. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_stock_item}{Stock\+Item}} $>$ \mbox{\hyperlink{class_library_1_1_warehouse_a9b96f52b460b3d97245400379410614d}{Missing\+Stock}} ()
+\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_a419eb5bc9ec8e6075a9fb3cf66bfe942}{Json\+To\+List}} ()
+\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_aebbcaebcc6316494a4b192d039318061}{Save\+Changes}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_section}{Section}} $>$ \mbox{\hyperlink{class_library_1_1_warehouse_a7383bc10a4b6ae797333379ae6efa353}{Sections}} = new List$<$\mbox{\hyperlink{class_library_1_1_section}{Section}}$>$()
+\begin{DoxyCompactList}\small\item\em Lista de secciones dentro del almacén. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_library_1_1_sells}{Sells}} \mbox{\hyperlink{class_library_1_1_warehouse_aebe6ffa4336f11d66e7e7996232937bb}{Vendido}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{interface_library_1_1_i_observer}{IObserver}} $>$ \mbox{\hyperlink{class_library_1_1_warehouse_a1e91fa65bd3d65da5e6b534140114d5e}{observers}} = new List$<$\mbox{\hyperlink{interface_library_1_1_i_observer}{IObserver}}$>$()
+\begin{DoxyCompactList}\small\item\em Lista de observadores suscritos al almacén. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_library_1_1_warehouse_aefdfe44735be01734fcca5198e11dd10}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Nombre del almacén. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_library_1_1_warehouse_aeaf8a8260e1e7cf8f65b09a363a2dd71}{Address}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Dirección del almacén. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_library_1_1_warehouse_aa3d5279b1ab093c3e0584efaa144dd74}{Latitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Latitud de la ubicación del almacén. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_library_1_1_warehouse_abab4131b80d086c501904dca5e38cff8}{Longitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Longitud de la ubicación del almacén. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa un almacén que implementa el patrón de diseño Observer para que podamos saber sobre los movimientos en stock(ventas) Es un Creator de \doxylink{class_library_1_1_item}{Item} y \doxylink{class_library_1_1_section}{Section} dado que los items tienen una categoría que corresponde a una sección dentro del depósito. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_library_1_1_warehouse_aa0aaaaf204067e522b4da9b65fe42cd8}\index{Library.Warehouse@{Library.Warehouse}!Warehouse@{Warehouse}}
+\index{Warehouse@{Warehouse}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{Warehouse()}{Warehouse()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_aa0aaaaf204067e522b4da9b65fe42cd8} 
+Library.\+Warehouse.\+Warehouse (\begin{DoxyParamCaption}\item[{string}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa una nueva instancia de la clase \doxylink{class_library_1_1_warehouse}{Warehouse} con el nombre especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & El nombre del almacén.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_library_1_1_warehouse_af35009087af9c65763a4e3eb0baf6c84}\index{Library.Warehouse@{Library.Warehouse}!AddSection@{AddSection}}
+\index{AddSection@{AddSection}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{AddSection()}{AddSection()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_af35009087af9c65763a4e3eb0baf6c84} 
+void Library.\+Warehouse.\+Add\+Section (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_section}{Section}}}]{section}{}\end{DoxyParamCaption})}
+
+
+
+Agrega una nueva sección al almacén. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & La sección que se va a agregar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_library_1_1_warehouse_ae11b12d085fd637aeb120565e7b164fe}\index{Library.Warehouse@{Library.Warehouse}!AgregarItem@{AgregarItem}}
+\index{AgregarItem@{AgregarItem}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{AgregarItem()}{AgregarItem()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_ae11b12d085fd637aeb120565e7b164fe} 
+void Library.\+Warehouse.\+Agregar\+Item (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Agrega un nuevo ítem a una sección del almacén. 
+
+\Hypertarget{class_library_1_1_warehouse_a419eb5bc9ec8e6075a9fb3cf66bfe942}\index{Library.Warehouse@{Library.Warehouse}!JsonToList@{JsonToList}}
+\index{JsonToList@{JsonToList}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{JsonToList()}{JsonToList()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_a419eb5bc9ec8e6075a9fb3cf66bfe942} 
+void Library.\+Warehouse.\+Json\+To\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_library_1_1_warehouse_a9b96f52b460b3d97245400379410614d}\index{Library.Warehouse@{Library.Warehouse}!MissingStock@{MissingStock}}
+\index{MissingStock@{MissingStock}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{MissingStock()}{MissingStock()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_a9b96f52b460b3d97245400379410614d} 
+List$<$ \mbox{\hyperlink{class_library_1_1_stock_item}{Stock\+Item}} $>$ Library.\+Warehouse.\+Missing\+Stock (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_library_1_1_warehouse_a2f5b88e0508021fabc7a507507f78aeb}\index{Library.Warehouse@{Library.Warehouse}!NotifyObservers@{NotifyObservers}}
+\index{NotifyObservers@{NotifyObservers}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{NotifyObservers()}{NotifyObservers()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_a2f5b88e0508021fabc7a507507f78aeb} 
+void Library.\+Warehouse.\+Notify\+Observers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Notifica a todos los observadores suscritos de un cambio. 
+
+
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_observable_af9969d05f68be3a62f119a504572148e}{Library.\+IObservable}}.
+
+\Hypertarget{class_library_1_1_warehouse_a6b0d14552fc9a3ebf0354f84df14ac0a}\index{Library.Warehouse@{Library.Warehouse}!RemoverItem@{RemoverItem}}
+\index{RemoverItem@{RemoverItem}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{RemoverItem()}{RemoverItem()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_a6b0d14552fc9a3ebf0354f84df14ac0a} 
+void Library.\+Warehouse.\+Remover\+Item (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Remueve un ítem de una sección del almacén. 
+
+\Hypertarget{class_library_1_1_warehouse_aebbcaebcc6316494a4b192d039318061}\index{Library.Warehouse@{Library.Warehouse}!SaveChanges@{SaveChanges}}
+\index{SaveChanges@{SaveChanges}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{SaveChanges()}{SaveChanges()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_aebbcaebcc6316494a4b192d039318061} 
+void Library.\+Warehouse.\+Save\+Changes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_library_1_1_warehouse_a2ad7e7691f68e291d9e358f9e7f62874}\index{Library.Warehouse@{Library.Warehouse}!SellItem@{SellItem}}
+\index{SellItem@{SellItem}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{SellItem()}{SellItem()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_a2ad7e7691f68e291d9e358f9e7f62874} 
+\mbox{\hyperlink{class_library_1_1_sells}{Sells}} Library.\+Warehouse.\+Sell\+Item (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Vende un ítem de una sección del almacén. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un objeto \doxylink{class_library_1_1_sells}{Sells} que representa la venta realizada.
+\end{DoxyReturn}
+\Hypertarget{class_library_1_1_warehouse_aa0f44983352f33a0c53afeeec3616bc1}\index{Library.Warehouse@{Library.Warehouse}!ShowInventory@{ShowInventory}}
+\index{ShowInventory@{ShowInventory}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{ShowInventory()}{ShowInventory()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_aa0f44983352f33a0c53afeeec3616bc1} 
+void Library.\+Warehouse.\+Show\+Inventory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Muestra el inventario del almacén. 
+
+\Hypertarget{class_library_1_1_warehouse_acc328c436b186bd32e632cc5f5df8fff}\index{Library.Warehouse@{Library.Warehouse}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{Subscribe()}{Subscribe()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_acc328c436b186bd32e632cc5f5df8fff} 
+void Library.\+Warehouse.\+Subscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_library_1_1_i_observer}{IObserver}}}]{observer}{}\end{DoxyParamCaption})}
+
+
+
+Suscribe un observador al almacén. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & El observador que se va a suscribir.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_observable_ad5aeeb580093c0de80bd03b71eefd36b}{Library.\+IObservable}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_library_1_1_warehouse_a1e91fa65bd3d65da5e6b534140114d5e}\index{Library.Warehouse@{Library.Warehouse}!observers@{observers}}
+\index{observers@{observers}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{observers}{observers}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_a1e91fa65bd3d65da5e6b534140114d5e} 
+List$<$\mbox{\hyperlink{interface_library_1_1_i_observer}{IObserver}}$>$ Library.\+Warehouse.\+observers = new List$<$\mbox{\hyperlink{interface_library_1_1_i_observer}{IObserver}}$>$()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Lista de observadores suscritos al almacén. 
+
+\Hypertarget{class_library_1_1_warehouse_a7383bc10a4b6ae797333379ae6efa353}\index{Library.Warehouse@{Library.Warehouse}!Sections@{Sections}}
+\index{Sections@{Sections}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{Sections}{Sections}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_a7383bc10a4b6ae797333379ae6efa353} 
+List$<$\mbox{\hyperlink{class_library_1_1_section}{Section}}$>$ Library.\+Warehouse.\+Sections = new List$<$\mbox{\hyperlink{class_library_1_1_section}{Section}}$>$()}
+
+
+
+Lista de secciones dentro del almacén. 
+
+\Hypertarget{class_library_1_1_warehouse_aebe6ffa4336f11d66e7e7996232937bb}\index{Library.Warehouse@{Library.Warehouse}!Vendido@{Vendido}}
+\index{Vendido@{Vendido}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{Vendido}{Vendido}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_aebe6ffa4336f11d66e7e7996232937bb} 
+\mbox{\hyperlink{class_library_1_1_sells}{Sells}} Library.\+Warehouse.\+Vendido}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_library_1_1_warehouse_aeaf8a8260e1e7cf8f65b09a363a2dd71}\index{Library.Warehouse@{Library.Warehouse}!Address@{Address}}
+\index{Address@{Address}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{Address}{Address}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_aeaf8a8260e1e7cf8f65b09a363a2dd71} 
+string Library.\+Warehouse.\+Address\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Dirección del almacén. 
+
+\Hypertarget{class_library_1_1_warehouse_aa3d5279b1ab093c3e0584efaa144dd74}\index{Library.Warehouse@{Library.Warehouse}!Latitude@{Latitude}}
+\index{Latitude@{Latitude}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{Latitude}{Latitude}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_aa3d5279b1ab093c3e0584efaa144dd74} 
+double Library.\+Warehouse.\+Latitude\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Latitud de la ubicación del almacén. 
+
+\Hypertarget{class_library_1_1_warehouse_abab4131b80d086c501904dca5e38cff8}\index{Library.Warehouse@{Library.Warehouse}!Longitude@{Longitude}}
+\index{Longitude@{Longitude}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{Longitude}{Longitude}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_abab4131b80d086c501904dca5e38cff8} 
+double Library.\+Warehouse.\+Longitude\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Longitud de la ubicación del almacén. 
+
+\Hypertarget{class_library_1_1_warehouse_aefdfe44735be01734fcca5198e11dd10}\index{Library.Warehouse@{Library.Warehouse}!Name@{Name}}
+\index{Name@{Name}!Library.Warehouse@{Library.Warehouse}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_aefdfe44735be01734fcca5198e11dd10} 
+string Library.\+Warehouse.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Nombre del almacén. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\+Warehouse/\mbox{\hyperlink{_warehouse_8cs}{Warehouse.\+cs}}\end{DoxyCompactItemize}

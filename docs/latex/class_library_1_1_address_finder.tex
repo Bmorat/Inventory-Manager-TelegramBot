@@ -1,0 +1,71 @@
+\doxysection{Library.\+Address\+Finder Class Reference}
+\hypertarget{class_library_1_1_address_finder}{}\label{class_library_1_1_address_finder}\index{Library.AddressFinder@{Library.AddressFinder}}
+
+
+Un buscador de direcciones concreto que usa una API de localización.  
+
+
+Inheritance diagram for Library.\+Address\+Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_library_1_1_address_finder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_library_1_1_address_finder_a7bb0b1fdd6a75edcc8055459ef5ce6f9}{Address\+Finder}} (\mbox{\hyperlink{class_library_1_1_location_api_client}{Location\+Api\+Client}} client)
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de \doxylink{class_library_1_1_address_finder}{Address\+Finder}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_library_1_1_i_address_result}{IAddress\+Result}} \mbox{\hyperlink{class_library_1_1_address_finder_ac9d55c26f9eda12e5bac8f2495b81547}{Get\+Location}} (string address)
+\begin{DoxyCompactList}\small\item\em Determina si existe una dirección. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Un buscador de direcciones concreto que usa una API de localización. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_library_1_1_address_finder_a7bb0b1fdd6a75edcc8055459ef5ce6f9}\index{Library.AddressFinder@{Library.AddressFinder}!AddressFinder@{AddressFinder}}
+\index{AddressFinder@{AddressFinder}!Library.AddressFinder@{Library.AddressFinder}}
+\doxysubsubsection{\texorpdfstring{AddressFinder()}{AddressFinder()}}
+{\footnotesize\ttfamily \label{class_library_1_1_address_finder_a7bb0b1fdd6a75edcc8055459ef5ce6f9} 
+Library.\+Address\+Finder.\+Address\+Finder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_location_api_client}{Location\+Api\+Client}}}]{client}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa una nueva instancia de \doxylink{class_library_1_1_address_finder}{Address\+Finder}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & El cliente de la API de localización.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_library_1_1_address_finder_ac9d55c26f9eda12e5bac8f2495b81547}\index{Library.AddressFinder@{Library.AddressFinder}!GetLocation@{GetLocation}}
+\index{GetLocation@{GetLocation}!Library.AddressFinder@{Library.AddressFinder}}
+\doxysubsubsection{\texorpdfstring{GetLocation()}{GetLocation()}}
+{\footnotesize\ttfamily \label{class_library_1_1_address_finder_ac9d55c26f9eda12e5bac8f2495b81547} 
+\mbox{\hyperlink{interface_library_1_1_i_address_result}{IAddress\+Result}} Library.\+Address\+Finder.\+Get\+Location (\begin{DoxyParamCaption}\item[{string}]{address}{}\end{DoxyParamCaption})}
+
+
+
+Determina si existe una dirección. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & La dirección a buscar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una instancia de \doxylink{class_library_1_1_address_result}{Address\+Result} con el resultado de la búsqueda, que incluye si la dirección se encontró o no, y si se encontró, la latitud y la longitud de la dirección.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_address_finder_a1f6488d720b51716be514cc2a5b6e85d}{Library.\+IAddress\+Finder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\+Locations/\mbox{\hyperlink{_address_finder_8cs}{Address\+Finder.\+cs}}\end{DoxyCompactItemize}

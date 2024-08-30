@@ -1,0 +1,110 @@
+\doxysection{Library.\+Address\+Result Class Reference}
+\hypertarget{class_library_1_1_address_result}{}\label{class_library_1_1_address_result}\index{Library.AddressResult@{Library.AddressResult}}
+
+
+Una implementación concreta del resutlado de buscar una dirección. Además de las propiedades definidas en \doxylink{interface_library_1_1_i_address_result}{IAddress\+Result} esta clase agrega una propiedad \doxylink{class_library_1_1_location}{Location} para acceder a las coordenadas de la dirección buscada.  
+
+
+Inheritance diagram for Library.\+Address\+Result\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_library_1_1_address_result}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_library_1_1_address_result_a31e69e8c5ac20d98eb6aee26de58cd00}{Address\+Result}} (\mbox{\hyperlink{class_library_1_1_location}{Location}} location)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_library_1_1_location}{Location}} \mbox{\hyperlink{class_library_1_1_address_result_a4d82e0b443a092851cc7371ccc23d8dc}{Location}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_library_1_1_address_result_a4dc6aa6c81bc8a2b14ae51228c49ee6e}{Found}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indica si se encontró o no la dirección. En ese caso son válidos los demás valores. En caso contrario los demás valores son indeterminados. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_library_1_1_address_result_ad1f8804e408f2c095a40a8c3880d87c4}{Latitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em La latitud de la dirección. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_library_1_1_address_result_a61ea6b0545363c23e2290084087df25a}{Longitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em La longitud de la dirección. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{class_library_1_1_address_result_a15a049f2b10a352b437606ab228abfb9}{Address}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_library_1_1_i_address_result}{Library.\+IAddress\+Result}}}
+
+
+\doxysubsection{Detailed Description}
+Una implementación concreta del resutlado de buscar una dirección. Además de las propiedades definidas en \doxylink{interface_library_1_1_i_address_result}{IAddress\+Result} esta clase agrega una propiedad \doxylink{class_library_1_1_location}{Location} para acceder a las coordenadas de la dirección buscada. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_library_1_1_address_result_a31e69e8c5ac20d98eb6aee26de58cd00}\index{Library.AddressResult@{Library.AddressResult}!AddressResult@{AddressResult}}
+\index{AddressResult@{AddressResult}!Library.AddressResult@{Library.AddressResult}}
+\doxysubsubsection{\texorpdfstring{AddressResult()}{AddressResult()}}
+{\footnotesize\ttfamily \label{class_library_1_1_address_result_a31e69e8c5ac20d98eb6aee26de58cd00} 
+Library.\+Address\+Result.\+Address\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_location}{Location}}}]{location}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_library_1_1_address_result_a15a049f2b10a352b437606ab228abfb9}\index{Library.AddressResult@{Library.AddressResult}!Address@{Address}}
+\index{Address@{Address}!Library.AddressResult@{Library.AddressResult}}
+\doxysubsubsection{\texorpdfstring{Address}{Address}}
+{\footnotesize\ttfamily \label{class_library_1_1_address_result_a15a049f2b10a352b437606ab228abfb9} 
+object Library.\+Address\+Result.\+Address\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_address_result_a00b1c594da3dc7cd0bcaa191d4722d12}{Library.\+IAddress\+Result}}.
+
+\Hypertarget{class_library_1_1_address_result_a4dc6aa6c81bc8a2b14ae51228c49ee6e}\index{Library.AddressResult@{Library.AddressResult}!Found@{Found}}
+\index{Found@{Found}!Library.AddressResult@{Library.AddressResult}}
+\doxysubsubsection{\texorpdfstring{Found}{Found}}
+{\footnotesize\ttfamily \label{class_library_1_1_address_result_a4dc6aa6c81bc8a2b14ae51228c49ee6e} 
+bool Library.\+Address\+Result.\+Found\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indica si se encontró o no la dirección. En ese caso son válidos los demás valores. En caso contrario los demás valores son indeterminados. 
+
+true si se encontró la dirección; false en caso contrario.
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_address_result_aea289314eb7e535dc302021669acfe2e}{Library.\+IAddress\+Result}}.
+
+\Hypertarget{class_library_1_1_address_result_ad1f8804e408f2c095a40a8c3880d87c4}\index{Library.AddressResult@{Library.AddressResult}!Latitude@{Latitude}}
+\index{Latitude@{Latitude}!Library.AddressResult@{Library.AddressResult}}
+\doxysubsubsection{\texorpdfstring{Latitude}{Latitude}}
+{\footnotesize\ttfamily \label{class_library_1_1_address_result_ad1f8804e408f2c095a40a8c3880d87c4} 
+double Library.\+Address\+Result.\+Latitude\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+La latitud de la dirección. 
+
+El valor de la latitud en formato decimal.
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_address_result_a63f9134a2b4a57c4b6932dbcebeab1e3}{Library.\+IAddress\+Result}}.
+
+\Hypertarget{class_library_1_1_address_result_a4d82e0b443a092851cc7371ccc23d8dc}\index{Library.AddressResult@{Library.AddressResult}!Location@{Location}}
+\index{Location@{Location}!Library.AddressResult@{Library.AddressResult}}
+\doxysubsubsection{\texorpdfstring{Location}{Location}}
+{\footnotesize\ttfamily \label{class_library_1_1_address_result_a4d82e0b443a092851cc7371ccc23d8dc} 
+\mbox{\hyperlink{class_library_1_1_location}{Location}} Library.\+Address\+Result.\+Location\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_library_1_1_address_result_a61ea6b0545363c23e2290084087df25a}\index{Library.AddressResult@{Library.AddressResult}!Longitude@{Longitude}}
+\index{Longitude@{Longitude}!Library.AddressResult@{Library.AddressResult}}
+\doxysubsubsection{\texorpdfstring{Longitude}{Longitude}}
+{\footnotesize\ttfamily \label{class_library_1_1_address_result_a61ea6b0545363c23e2290084087df25a} 
+double Library.\+Address\+Result.\+Longitude\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+La longitud de la dirección. 
+
+El valor de la longitud en formato decimal.
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_address_result_a214219debd00c64f2221139fa04ae018}{Library.\+IAddress\+Result}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\+Locations/\mbox{\hyperlink{_address_finder_8cs}{Address\+Finder.\+cs}}\end{DoxyCompactItemize}

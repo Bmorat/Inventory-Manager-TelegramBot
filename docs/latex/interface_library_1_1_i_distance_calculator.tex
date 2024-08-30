@@ -1,0 +1,53 @@
+\doxysection{Library.\+IDistance\+Calculator Interface Reference}
+\hypertarget{interface_library_1_1_i_distance_calculator}{}\label{interface_library_1_1_i_distance_calculator}\index{Library.IDistanceCalculator@{Library.IDistanceCalculator}}
+
+
+Una interfaz que define una abstracción para un calculador de distancias genérico.  
+
+
+Inheritance diagram for Library.\+IDistance\+Calculator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_library_1_1_i_distance_calculator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_library_1_1_i_distance_result}{IDistance\+Result}} \mbox{\hyperlink{interface_library_1_1_i_distance_calculator_ae359e144f9252235e91d04dc01d79426}{Calculate\+Distance}} (string from\+Address, string to\+Address)
+\begin{DoxyCompactList}\small\item\em Determina si existe una dirección. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Una interfaz que define una abstracción para un calculador de distancias genérico. 
+
+Esta interfaz fue creada siguiendo el principio de inversión de dependencias para evitar que los comandos concretos dependan de calculadores de distancias concretos; en su lugar los comandos concretos dependen de esta abstracción. Entre otras cosas est permite cambiar el calculador de distancias en tiempo de ejecución, para utilizar uno en los casos de prueba que retorna resultados conocidos para direcciones conocidas, y otro en la versión final para buscar usando una API de localizaciones. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_library_1_1_i_distance_calculator_ae359e144f9252235e91d04dc01d79426}\index{Library.IDistanceCalculator@{Library.IDistanceCalculator}!CalculateDistance@{CalculateDistance}}
+\index{CalculateDistance@{CalculateDistance}!Library.IDistanceCalculator@{Library.IDistanceCalculator}}
+\doxysubsubsection{\texorpdfstring{CalculateDistance()}{CalculateDistance()}}
+{\footnotesize\ttfamily \label{interface_library_1_1_i_distance_calculator_ae359e144f9252235e91d04dc01d79426} 
+\mbox{\hyperlink{interface_library_1_1_i_distance_result}{IDistance\+Result}} Library.\+IDistance\+Calculator.\+Calculate\+Distance (\begin{DoxyParamCaption}\item[{string}]{from\+Address}{, }\item[{string}]{to\+Address}{}\end{DoxyParamCaption})}
+
+
+
+Determina si existe una dirección. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & La dirección a buscar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la dirección existe; false en caso contrario.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_library_1_1_distance_calculator_a10ce2a1a43731f6932a6043dbee0adfc}{Library.\+Distance\+Calculator}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\+Locations/\mbox{\hyperlink{_i_distance_calculator_8cs}{IDistance\+Calculator.\+cs}}\end{DoxyCompactItemize}

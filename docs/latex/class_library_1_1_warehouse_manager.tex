@@ -1,0 +1,138 @@
+\doxysection{Library.\+Warehouse\+Manager Class Reference}
+\hypertarget{class_library_1_1_warehouse_manager}{}\label{class_library_1_1_warehouse_manager}\index{Library.WarehouseManager@{Library.WarehouseManager}}
+
+
+El propósito de esta clase es "{}quitar"{} al admin la responsabilidad de administrar los depósitos, si bien por User\+Story el admin es el encargado de esto, para evitar el acoplamiento se crea un administrador de depósitos que maneja el admin. La intención con el bot es utilizarla con singleton para que sea una única instancia y todos los usuarios manejen la misma lista de depósitos ubicada en warehouses. Esta clase cumple con SRP porque su responsabilidad es manjear los depósitos y lo que ocurre con los items que tiene dentro A su vez, cumple con el patrón Expert porque es esta clase conoce las ventas porque sabe que items ingresan y salen de los depositos.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_manager_a8c66776b30ebd081edfbd163e64a387b}{Warehouse\+Menu}} ()
+\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_manager_aaa2158103edc4868845c9cecccca4984}{Add\+Warehouses}} ()
+\begin{DoxyCompactList}\small\item\em Agrega depositos a la lista Warehouses en caso de que su nombre no este registrado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_manager_a23b78265a9af44f3331ddaf697260c2f}{Add\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Pregunta en que deposito quiere agregar el item y comprueba que ese deposito exista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_manager_aa52bfc12902599170a9cde95d13b8952}{Sell\+Viewer}} ()
+\begin{DoxyCompactList}\small\item\em Permite ver todas las ventas realizadas hasta el momento, recorre la lista sells y muestra cada sell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_manager_a94dbf7a493e8f7cd2ffead959f4003f4}{Json\+To\+List}} ()
+\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_manager_a788c0f9061743d309126b931cfa9a396}{Save\+Changes}} ()
+\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_manager_a6ffdd0703d210ded6dcca616f38e9a81}{Sell\+List}} ()
+\item 
+void \mbox{\hyperlink{class_library_1_1_warehouse_manager_a29fb8b2603ee436ea51e119c88796883}{sellsave}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_warehouse}{Warehouse}} $>$ \mbox{\hyperlink{class_library_1_1_warehouse_manager_aabbc29fd2f65089f0ac876196a0c368a}{Warehouses}} = new List$<$\mbox{\hyperlink{class_library_1_1_warehouse}{Warehouse}}$>$()
+\begin{DoxyCompactList}\small\item\em Creamos una lista de depositos para tener todos los depositos existentes. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_sells}{Sells}} $>$ \mbox{\hyperlink{class_library_1_1_warehouse_manager_afb53ebc1e71f857ced6df27cd3755fb4}{sells}} = new List$<$\mbox{\hyperlink{class_library_1_1_sells}{Sells}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_library_1_1_warehouse}{Warehouse}} \mbox{\hyperlink{class_library_1_1_warehouse_manager_a89b0775c234c84facbae411c71756ccf}{Auxiliar\+Warehouse}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+El propósito de esta clase es "{}quitar"{} al admin la responsabilidad de administrar los depósitos, si bien por User\+Story el admin es el encargado de esto, para evitar el acoplamiento se crea un administrador de depósitos que maneja el admin. La intención con el bot es utilizarla con singleton para que sea una única instancia y todos los usuarios manejen la misma lista de depósitos ubicada en warehouses. Esta clase cumple con SRP porque su responsabilidad es manjear los depósitos y lo que ocurre con los items que tiene dentro A su vez, cumple con el patrón Expert porque es esta clase conoce las ventas porque sabe que items ingresan y salen de los depositos. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_library_1_1_warehouse_manager_a23b78265a9af44f3331ddaf697260c2f}\index{Library.WarehouseManager@{Library.WarehouseManager}!AddItem@{AddItem}}
+\index{AddItem@{AddItem}!Library.WarehouseManager@{Library.WarehouseManager}}
+\doxysubsubsection{\texorpdfstring{AddItem()}{AddItem()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_manager_a23b78265a9af44f3331ddaf697260c2f} 
+void Library.\+Warehouse\+Manager.\+Add\+Item (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Pregunta en que deposito quiere agregar el item y comprueba que ese deposito exista. 
+
+\Hypertarget{class_library_1_1_warehouse_manager_aaa2158103edc4868845c9cecccca4984}\index{Library.WarehouseManager@{Library.WarehouseManager}!AddWarehouses@{AddWarehouses}}
+\index{AddWarehouses@{AddWarehouses}!Library.WarehouseManager@{Library.WarehouseManager}}
+\doxysubsubsection{\texorpdfstring{AddWarehouses()}{AddWarehouses()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_manager_aaa2158103edc4868845c9cecccca4984} 
+void Library.\+Warehouse\+Manager.\+Add\+Warehouses (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Agrega depositos a la lista Warehouses en caso de que su nombre no este registrado. 
+
+\Hypertarget{class_library_1_1_warehouse_manager_a94dbf7a493e8f7cd2ffead959f4003f4}\index{Library.WarehouseManager@{Library.WarehouseManager}!JsonToList@{JsonToList}}
+\index{JsonToList@{JsonToList}!Library.WarehouseManager@{Library.WarehouseManager}}
+\doxysubsubsection{\texorpdfstring{JsonToList()}{JsonToList()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_manager_a94dbf7a493e8f7cd2ffead959f4003f4} 
+void Library.\+Warehouse\+Manager.\+Json\+To\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_library_1_1_warehouse_manager_a788c0f9061743d309126b931cfa9a396}\index{Library.WarehouseManager@{Library.WarehouseManager}!SaveChanges@{SaveChanges}}
+\index{SaveChanges@{SaveChanges}!Library.WarehouseManager@{Library.WarehouseManager}}
+\doxysubsubsection{\texorpdfstring{SaveChanges()}{SaveChanges()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_manager_a788c0f9061743d309126b931cfa9a396} 
+void Library.\+Warehouse\+Manager.\+Save\+Changes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_library_1_1_warehouse_manager_a6ffdd0703d210ded6dcca616f38e9a81}\index{Library.WarehouseManager@{Library.WarehouseManager}!SellList@{SellList}}
+\index{SellList@{SellList}!Library.WarehouseManager@{Library.WarehouseManager}}
+\doxysubsubsection{\texorpdfstring{SellList()}{SellList()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_manager_a6ffdd0703d210ded6dcca616f38e9a81} 
+void Library.\+Warehouse\+Manager.\+Sell\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_library_1_1_warehouse_manager_a29fb8b2603ee436ea51e119c88796883}\index{Library.WarehouseManager@{Library.WarehouseManager}!sellsave@{sellsave}}
+\index{sellsave@{sellsave}!Library.WarehouseManager@{Library.WarehouseManager}}
+\doxysubsubsection{\texorpdfstring{sellsave()}{sellsave()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_manager_a29fb8b2603ee436ea51e119c88796883} 
+void Library.\+Warehouse\+Manager.\+sellsave (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_library_1_1_warehouse_manager_aa52bfc12902599170a9cde95d13b8952}\index{Library.WarehouseManager@{Library.WarehouseManager}!SellViewer@{SellViewer}}
+\index{SellViewer@{SellViewer}!Library.WarehouseManager@{Library.WarehouseManager}}
+\doxysubsubsection{\texorpdfstring{SellViewer()}{SellViewer()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_manager_aa52bfc12902599170a9cde95d13b8952} 
+void Library.\+Warehouse\+Manager.\+Sell\+Viewer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Permite ver todas las ventas realizadas hasta el momento, recorre la lista sells y muestra cada sell. 
+
+~\newline
+ \Hypertarget{class_library_1_1_warehouse_manager_a8c66776b30ebd081edfbd163e64a387b}\index{Library.WarehouseManager@{Library.WarehouseManager}!WarehouseMenu@{WarehouseMenu}}
+\index{WarehouseMenu@{WarehouseMenu}!Library.WarehouseManager@{Library.WarehouseManager}}
+\doxysubsubsection{\texorpdfstring{WarehouseMenu()}{WarehouseMenu()}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_manager_a8c66776b30ebd081edfbd163e64a387b} 
+void Library.\+Warehouse\+Manager.\+Warehouse\+Menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_library_1_1_warehouse_manager_afb53ebc1e71f857ced6df27cd3755fb4}\index{Library.WarehouseManager@{Library.WarehouseManager}!sells@{sells}}
+\index{sells@{sells}!Library.WarehouseManager@{Library.WarehouseManager}}
+\doxysubsubsection{\texorpdfstring{sells}{sells}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_manager_afb53ebc1e71f857ced6df27cd3755fb4} 
+List$<$\mbox{\hyperlink{class_library_1_1_sells}{Sells}}$>$ Library.\+Warehouse\+Manager.\+sells = new List$<$\mbox{\hyperlink{class_library_1_1_sells}{Sells}}$>$()}
+
+\Hypertarget{class_library_1_1_warehouse_manager_aabbc29fd2f65089f0ac876196a0c368a}\index{Library.WarehouseManager@{Library.WarehouseManager}!Warehouses@{Warehouses}}
+\index{Warehouses@{Warehouses}!Library.WarehouseManager@{Library.WarehouseManager}}
+\doxysubsubsection{\texorpdfstring{Warehouses}{Warehouses}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_manager_aabbc29fd2f65089f0ac876196a0c368a} 
+List$<$\mbox{\hyperlink{class_library_1_1_warehouse}{Warehouse}}$>$ Library.\+Warehouse\+Manager.\+Warehouses = new List$<$\mbox{\hyperlink{class_library_1_1_warehouse}{Warehouse}}$>$()}
+
+
+
+Creamos una lista de depositos para tener todos los depositos existentes. 
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_library_1_1_warehouse_manager_a89b0775c234c84facbae411c71756ccf}\index{Library.WarehouseManager@{Library.WarehouseManager}!AuxiliarWarehouse@{AuxiliarWarehouse}}
+\index{AuxiliarWarehouse@{AuxiliarWarehouse}!Library.WarehouseManager@{Library.WarehouseManager}}
+\doxysubsubsection{\texorpdfstring{AuxiliarWarehouse}{AuxiliarWarehouse}}
+{\footnotesize\ttfamily \label{class_library_1_1_warehouse_manager_a89b0775c234c84facbae411c71756ccf} 
+\mbox{\hyperlink{class_library_1_1_warehouse}{Warehouse}} Library.\+Warehouse\+Manager.\+Auxiliar\+Warehouse\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\+Warehouse/\mbox{\hyperlink{_warehouse_manager_8cs}{Warehouse\+Manager.\+cs}}\end{DoxyCompactItemize}

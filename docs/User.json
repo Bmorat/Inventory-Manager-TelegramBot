@@ -1,0 +1,24 @@
+[
+  {
+    "Name": "Brian",
+    "id": 0,
+    "User": "admin",
+    "Password": "admin",
+    "logged": true,
+    "admin": true,
+    "ChatId": 6364397130,
+    "Latitude": -34.849929,
+    "Longitude": -56.037141
+  },
+  {
+    "Name": "Alfonso",
+    "id": 3,
+    "User": "Daniel",
+    "Password": "Rodriguez",
+    "logged": true,
+    "admin": false,
+    "ChatId": 6949851322,
+    "Latitude": -34.88216,
+    "Longitude": -56.15277
+  }
+]

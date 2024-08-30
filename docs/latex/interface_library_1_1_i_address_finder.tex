@@ -1,0 +1,53 @@
+\doxysection{Library.\+IAddress\+Finder Interface Reference}
+\hypertarget{interface_library_1_1_i_address_finder}{}\label{interface_library_1_1_i_address_finder}\index{Library.IAddressFinder@{Library.IAddressFinder}}
+
+
+Una interfaz define una abstracción para un buscador de direcciones genérico.  
+
+
+Inheritance diagram for Library.\+IAddress\+Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_library_1_1_i_address_finder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_library_1_1_i_address_result}{IAddress\+Result}} \mbox{\hyperlink{interface_library_1_1_i_address_finder_a1f6488d720b51716be514cc2a5b6e85d}{Get\+Location}} (string address)
+\begin{DoxyCompactList}\small\item\em Determina si existe una dirección. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Una interfaz define una abstracción para un buscador de direcciones genérico. 
+
+Esta interfaz fue creada siguiendo el principio de inversión de dependencias para evitar que los comandos concretos dependan de buscadores de direcciones concretos; en su lugar los comandos concretos dependen de esta abstracción. Entre otras cosas est permite cambiar el buscador de direcciones en tiempo de ejecución, para utilizar uno en los casos de prueba que retorna resultados conocidos para direcciones conocidas, y otro en la versión final para buscar usando una API de localizaciones. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_library_1_1_i_address_finder_a1f6488d720b51716be514cc2a5b6e85d}\index{Library.IAddressFinder@{Library.IAddressFinder}!GetLocation@{GetLocation}}
+\index{GetLocation@{GetLocation}!Library.IAddressFinder@{Library.IAddressFinder}}
+\doxysubsubsection{\texorpdfstring{GetLocation()}{GetLocation()}}
+{\footnotesize\ttfamily \label{interface_library_1_1_i_address_finder_a1f6488d720b51716be514cc2a5b6e85d} 
+\mbox{\hyperlink{interface_library_1_1_i_address_result}{IAddress\+Result}} Library.\+IAddress\+Finder.\+Get\+Location (\begin{DoxyParamCaption}\item[{string}]{address}{}\end{DoxyParamCaption})}
+
+
+
+Determina si existe una dirección. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & La dirección a buscar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un objeto de una clase que implemente la interfaz \doxylink{interface_library_1_1_i_address_result}{IAddress\+Result} con el resultado de la búsqueda, que incluye si la dirección se encontró o no, y si se encontró, la latitud y la longitud de la dirección.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_library_1_1_address_finder_ac9d55c26f9eda12e5bac8f2495b81547}{Library.\+Address\+Finder}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\+Locations/\mbox{\hyperlink{_i_address_finder_8cs}{IAddress\+Finder.\+cs}}\end{DoxyCompactItemize}

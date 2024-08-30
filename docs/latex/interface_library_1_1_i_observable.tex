@@ -1,0 +1,64 @@
+\doxysection{Library.\+IObservable Interface Reference}
+\hypertarget{interface_library_1_1_i_observable}{}\label{interface_library_1_1_i_observable}\index{Library.IObservable@{Library.IObservable}}
+
+
+Representa una interfaz para los objetos observables en el patrón Observer. Un objeto observable mantiene una lista de sus observadores y les notifica de cualquier cambio.  
+
+
+Inheritance diagram for Library.\+IObservable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_library_1_1_i_observable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_library_1_1_i_observable_ad5aeeb580093c0de80bd03b71eefd36b}{Subscribe}} (\mbox{\hyperlink{interface_library_1_1_i_observer}{IObserver}} observer)
+\begin{DoxyCompactList}\small\item\em Suscribe un observador para recibir notificaciones de cambios. Este método se utiliza para agregar un observador a la lista de observadores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_library_1_1_i_observable_af9969d05f68be3a62f119a504572148e}{Notify\+Observers}} ()
+\begin{DoxyCompactList}\small\item\em Notifica a todos los observadores suscritos de un cambio. Este método se llama cuando el objeto observable experimenta un cambio, lo que provoca que todos los observadores sean notificados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una interfaz para los objetos observables en el patrón Observer. Un objeto observable mantiene una lista de sus observadores y les notifica de cualquier cambio. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_library_1_1_i_observable_af9969d05f68be3a62f119a504572148e}\index{Library.IObservable@{Library.IObservable}!NotifyObservers@{NotifyObservers}}
+\index{NotifyObservers@{NotifyObservers}!Library.IObservable@{Library.IObservable}}
+\doxysubsubsection{\texorpdfstring{NotifyObservers()}{NotifyObservers()}}
+{\footnotesize\ttfamily \label{interface_library_1_1_i_observable_af9969d05f68be3a62f119a504572148e} 
+void Library.\+IObservable.\+Notify\+Observers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Notifica a todos los observadores suscritos de un cambio. Este método se llama cuando el objeto observable experimenta un cambio, lo que provoca que todos los observadores sean notificados. 
+
+
+
+Implemented in \mbox{\hyperlink{class_library_1_1_warehouse_a2f5b88e0508021fabc7a507507f78aeb}{Library.\+Warehouse}}.
+
+\Hypertarget{interface_library_1_1_i_observable_ad5aeeb580093c0de80bd03b71eefd36b}\index{Library.IObservable@{Library.IObservable}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!Library.IObservable@{Library.IObservable}}
+\doxysubsubsection{\texorpdfstring{Subscribe()}{Subscribe()}}
+{\footnotesize\ttfamily \label{interface_library_1_1_i_observable_ad5aeeb580093c0de80bd03b71eefd36b} 
+void Library.\+IObservable.\+Subscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_library_1_1_i_observer}{IObserver}}}]{observer}{}\end{DoxyParamCaption})}
+
+
+
+Suscribe un observador para recibir notificaciones de cambios. Este método se utiliza para agregar un observador a la lista de observadores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & El observador que se va a suscribir.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_library_1_1_warehouse_acc328c436b186bd32e632cc5f5df8fff}{Library.\+Warehouse}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\mbox{\hyperlink{_i_observable_8cs}{IObservable.\+cs}}\end{DoxyCompactItemize}

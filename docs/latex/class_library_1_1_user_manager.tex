@@ -1,0 +1,170 @@
+\doxysection{Library.\+User\+Manager Class Reference}
+\hypertarget{class_library_1_1_user_manager}{}\label{class_library_1_1_user_manager}\index{Library.UserManager@{Library.UserManager}}
+
+
+Clase que gestiona la información de los usuarios y proveedores en el sistema. Esta clase sigue el patron SRP dado que delega la responsabilidad de admin de gestionar a los usuarios registrados mediante el uso de archivos Json, sigue SRP porque la unica razon de existencia de esta clase es gestionar los usuarios registrados y las listas de espera///.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_library_1_1_user_manager_ae311f09c02e607e827065b542d5dc327}{User\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_library_1_1_user_manager}{User\+Manager}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_user_manager_a4d7ce81c68978773efd0893f331a6c11}{Save\+Changes}} ()
+\begin{DoxyCompactList}\small\item\em Guarda los cambios realizados en la lista de usuarios y proveedores en los archivos JSON correspondientes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_user_manager_a9a9e7b4d75869114bb95d0fbc63b951b}{Json\+To\+List}} ()
+\begin{DoxyCompactList}\small\item\em Convierte la información almacenada en el archivo JSON de usuarios a listas de usuarios. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_user}{User}} $>$ \mbox{\hyperlink{class_library_1_1_user_manager_a342f2c271c4fb14f263a7ec4d8c4d94b}{Get\+Waiting\+Users}} ()
+\begin{DoxyCompactList}\small\item\em Convierte la información almacenada en el archivo JSON de proveedores a listas de proveedores. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_supplier}{Supplier}} $>$ \mbox{\hyperlink{class_library_1_1_user_manager_aae6e329df93497e49110f4090be123ba}{Get\+Waiting\+Suppliers}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la lista de proveedores en espera de registro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_user}{User}} $>$ \mbox{\hyperlink{class_library_1_1_user_manager_aee6a49f7f2a279a17549a3740005f993}{User\+Waitlist}} = new List$<$\mbox{\hyperlink{class_library_1_1_user}{User}}$>$()
+\begin{DoxyCompactList}\small\item\em Lista de usuarios en espera de registro. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_user}{User}} $>$ \mbox{\hyperlink{class_library_1_1_user_manager_a1e2660aed28bbfc1b9403a6a3ad1173f}{Registered\+Users}} = new List$<$\mbox{\hyperlink{class_library_1_1_user}{User}}$>$()
+\begin{DoxyCompactList}\small\item\em Lista de usuarios registrados en el sistema. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_supplier}{Supplier}} $>$ \mbox{\hyperlink{class_library_1_1_user_manager_ab8b1c84bd1dd2d27690341b6b2285b49}{Supplier\+Waitlist}} = new List$<$\mbox{\hyperlink{class_library_1_1_supplier}{Supplier}}$>$()
+\begin{DoxyCompactList}\small\item\em Lista de proveedores en espera de registro. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_supplier}{Supplier}} $>$ \mbox{\hyperlink{class_library_1_1_user_manager_a09d533d0838739fa09675e16ca67b47f}{Registered\+Suppliers}} = new List$<$\mbox{\hyperlink{class_library_1_1_supplier}{Supplier}}$>$()
+\begin{DoxyCompactList}\small\item\em Lista de proveedores registrados en el sistema. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_library_1_1_user_manager_aeb12a71963d69baaad379c935b8c2b96}{file\+Path}}
+\begin{DoxyCompactList}\small\item\em Ruta al archivo JSON que contiene la información de los usuarios. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_library_1_1_user_manager_abf70a51ec1ff29447c41e3c8e46f6d69}{file\+Path2}}
+\begin{DoxyCompactList}\small\item\em Ruta al segundo archivo JSON que contiene la información de los proveedores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que gestiona la información de los usuarios y proveedores en el sistema. Esta clase sigue el patron SRP dado que delega la responsabilidad de admin de gestionar a los usuarios registrados mediante el uso de archivos Json, sigue SRP porque la unica razon de existencia de esta clase es gestionar los usuarios registrados y las listas de espera///. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_library_1_1_user_manager_ae311f09c02e607e827065b542d5dc327}\index{Library.UserManager@{Library.UserManager}!UserManager@{UserManager}}
+\index{UserManager@{UserManager}!Library.UserManager@{Library.UserManager}}
+\doxysubsubsection{\texorpdfstring{UserManager()}{UserManager()}}
+{\footnotesize\ttfamily \label{class_library_1_1_user_manager_ae311f09c02e607e827065b542d5dc327} 
+Library.\+User\+Manager.\+User\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{class_library_1_1_user_manager}{User\+Manager}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_library_1_1_user_manager_aae6e329df93497e49110f4090be123ba}\index{Library.UserManager@{Library.UserManager}!GetWaitingSuppliers@{GetWaitingSuppliers}}
+\index{GetWaitingSuppliers@{GetWaitingSuppliers}!Library.UserManager@{Library.UserManager}}
+\doxysubsubsection{\texorpdfstring{GetWaitingSuppliers()}{GetWaitingSuppliers()}}
+{\footnotesize\ttfamily \label{class_library_1_1_user_manager_aae6e329df93497e49110f4090be123ba} 
+List$<$ \mbox{\hyperlink{class_library_1_1_supplier}{Supplier}} $>$ Library.\+User\+Manager.\+Get\+Waiting\+Suppliers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene la lista de proveedores en espera de registro. 
+
+\begin{DoxyReturn}{Returns}
+Lista de proveedores en espera.
+\end{DoxyReturn}
+\Hypertarget{class_library_1_1_user_manager_a342f2c271c4fb14f263a7ec4d8c4d94b}\index{Library.UserManager@{Library.UserManager}!GetWaitingUsers@{GetWaitingUsers}}
+\index{GetWaitingUsers@{GetWaitingUsers}!Library.UserManager@{Library.UserManager}}
+\doxysubsubsection{\texorpdfstring{GetWaitingUsers()}{GetWaitingUsers()}}
+{\footnotesize\ttfamily \label{class_library_1_1_user_manager_a342f2c271c4fb14f263a7ec4d8c4d94b} 
+List$<$ \mbox{\hyperlink{class_library_1_1_user}{User}} $>$ Library.\+User\+Manager.\+Get\+Waiting\+Users (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Convierte la información almacenada en el archivo JSON de proveedores a listas de proveedores. 
+
+Obtiene la lista de usuarios en espera de registro.
+
+\begin{DoxyReturn}{Returns}
+Lista de usuarios en espera.
+\end{DoxyReturn}
+\Hypertarget{class_library_1_1_user_manager_a9a9e7b4d75869114bb95d0fbc63b951b}\index{Library.UserManager@{Library.UserManager}!JsonToList@{JsonToList}}
+\index{JsonToList@{JsonToList}!Library.UserManager@{Library.UserManager}}
+\doxysubsubsection{\texorpdfstring{JsonToList()}{JsonToList()}}
+{\footnotesize\ttfamily \label{class_library_1_1_user_manager_a9a9e7b4d75869114bb95d0fbc63b951b} 
+void Library.\+User\+Manager.\+Json\+To\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Convierte la información almacenada en el archivo JSON de usuarios a listas de usuarios. 
+
+\Hypertarget{class_library_1_1_user_manager_a4d7ce81c68978773efd0893f331a6c11}\index{Library.UserManager@{Library.UserManager}!SaveChanges@{SaveChanges}}
+\index{SaveChanges@{SaveChanges}!Library.UserManager@{Library.UserManager}}
+\doxysubsubsection{\texorpdfstring{SaveChanges()}{SaveChanges()}}
+{\footnotesize\ttfamily \label{class_library_1_1_user_manager_a4d7ce81c68978773efd0893f331a6c11} 
+void Library.\+User\+Manager.\+Save\+Changes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Guarda los cambios realizados en la lista de usuarios y proveedores en los archivos JSON correspondientes. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_library_1_1_user_manager_aeb12a71963d69baaad379c935b8c2b96}\index{Library.UserManager@{Library.UserManager}!filePath@{filePath}}
+\index{filePath@{filePath}!Library.UserManager@{Library.UserManager}}
+\doxysubsubsection{\texorpdfstring{filePath}{filePath}}
+{\footnotesize\ttfamily \label{class_library_1_1_user_manager_aeb12a71963d69baaad379c935b8c2b96} 
+string Library.\+User\+Manager.\+file\+Path}
+
+
+
+Ruta al archivo JSON que contiene la información de los usuarios. 
+
+\Hypertarget{class_library_1_1_user_manager_abf70a51ec1ff29447c41e3c8e46f6d69}\index{Library.UserManager@{Library.UserManager}!filePath2@{filePath2}}
+\index{filePath2@{filePath2}!Library.UserManager@{Library.UserManager}}
+\doxysubsubsection{\texorpdfstring{filePath2}{filePath2}}
+{\footnotesize\ttfamily \label{class_library_1_1_user_manager_abf70a51ec1ff29447c41e3c8e46f6d69} 
+string Library.\+User\+Manager.\+file\+Path2}
+
+
+
+Ruta al segundo archivo JSON que contiene la información de los proveedores. 
+
+\Hypertarget{class_library_1_1_user_manager_a09d533d0838739fa09675e16ca67b47f}\index{Library.UserManager@{Library.UserManager}!RegisteredSuppliers@{RegisteredSuppliers}}
+\index{RegisteredSuppliers@{RegisteredSuppliers}!Library.UserManager@{Library.UserManager}}
+\doxysubsubsection{\texorpdfstring{RegisteredSuppliers}{RegisteredSuppliers}}
+{\footnotesize\ttfamily \label{class_library_1_1_user_manager_a09d533d0838739fa09675e16ca67b47f} 
+List$<$\mbox{\hyperlink{class_library_1_1_supplier}{Supplier}}$>$ Library.\+User\+Manager.\+Registered\+Suppliers = new List$<$\mbox{\hyperlink{class_library_1_1_supplier}{Supplier}}$>$()}
+
+
+
+Lista de proveedores registrados en el sistema. 
+
+\Hypertarget{class_library_1_1_user_manager_a1e2660aed28bbfc1b9403a6a3ad1173f}\index{Library.UserManager@{Library.UserManager}!RegisteredUsers@{RegisteredUsers}}
+\index{RegisteredUsers@{RegisteredUsers}!Library.UserManager@{Library.UserManager}}
+\doxysubsubsection{\texorpdfstring{RegisteredUsers}{RegisteredUsers}}
+{\footnotesize\ttfamily \label{class_library_1_1_user_manager_a1e2660aed28bbfc1b9403a6a3ad1173f} 
+List$<$\mbox{\hyperlink{class_library_1_1_user}{User}}$>$ Library.\+User\+Manager.\+Registered\+Users = new List$<$\mbox{\hyperlink{class_library_1_1_user}{User}}$>$()}
+
+
+
+Lista de usuarios registrados en el sistema. 
+
+\Hypertarget{class_library_1_1_user_manager_ab8b1c84bd1dd2d27690341b6b2285b49}\index{Library.UserManager@{Library.UserManager}!SupplierWaitlist@{SupplierWaitlist}}
+\index{SupplierWaitlist@{SupplierWaitlist}!Library.UserManager@{Library.UserManager}}
+\doxysubsubsection{\texorpdfstring{SupplierWaitlist}{SupplierWaitlist}}
+{\footnotesize\ttfamily \label{class_library_1_1_user_manager_ab8b1c84bd1dd2d27690341b6b2285b49} 
+List$<$\mbox{\hyperlink{class_library_1_1_supplier}{Supplier}}$>$ Library.\+User\+Manager.\+Supplier\+Waitlist = new List$<$\mbox{\hyperlink{class_library_1_1_supplier}{Supplier}}$>$()}
+
+
+
+Lista de proveedores en espera de registro. 
+
+\Hypertarget{class_library_1_1_user_manager_aee6a49f7f2a279a17549a3740005f993}\index{Library.UserManager@{Library.UserManager}!UserWaitlist@{UserWaitlist}}
+\index{UserWaitlist@{UserWaitlist}!Library.UserManager@{Library.UserManager}}
+\doxysubsubsection{\texorpdfstring{UserWaitlist}{UserWaitlist}}
+{\footnotesize\ttfamily \label{class_library_1_1_user_manager_aee6a49f7f2a279a17549a3740005f993} 
+List$<$\mbox{\hyperlink{class_library_1_1_user}{User}}$>$ Library.\+User\+Manager.\+User\+Waitlist = new List$<$\mbox{\hyperlink{class_library_1_1_user}{User}}$>$()}
+
+
+
+Lista de usuarios en espera de registro. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\+Users/\mbox{\hyperlink{_user_manager_8cs}{User\+Manager.\+cs}}\end{DoxyCompactItemize}

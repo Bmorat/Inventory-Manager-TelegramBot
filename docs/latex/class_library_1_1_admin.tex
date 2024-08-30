@@ -1,0 +1,141 @@
+\doxysection{Library.\+Admin Class Reference}
+\hypertarget{class_library_1_1_admin}{}\label{class_library_1_1_admin}\index{Library.Admin@{Library.Admin}}
+
+
+Representa un administrador que hereda de \doxylink{class_library_1_1_usuarios}{Usuarios} e implementa la interfaz \doxylink{interface_library_1_1_i_user}{IUser}.  
+
+
+Inheritance diagram for Library.\+Admin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_library_1_1_admin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_library_1_1_admin_a5d1d6fdac7f0b23d9f5c62fb3003cfa4}{Add\+User}} (\mbox{\hyperlink{class_library_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em Agrega un nuevo usuario a la lista de usuarios registrados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_admin_ac88f23a640df29b7c82d1cf40cd6792f}{Add\+Supplier}} (\mbox{\hyperlink{class_library_1_1_supplier}{Supplier}} supplier)
+\begin{DoxyCompactList}\small\item\em Agrega un nuevo proveedor a la lista de proveedores registrados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_admin_a2c2f0d578c33d3ffb283ce51c17f4994}{New\+Warehouse}} ()
+\begin{DoxyCompactList}\small\item\em Llama al menú de gestión de almacenes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_admin_a7eaea456ff036241df320c426775408d}{Search\+Product}} ()
+\begin{DoxyCompactList}\small\item\em Busca un producto por su código. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_admin_ac0203ad51aa219491d4daadf41a0ccd1}{View\+Sales}} ()
+\begin{DoxyCompactList}\small\item\em Muestra las ventas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_library_1_1_user_manager}{User\+Manager}} \mbox{\hyperlink{class_library_1_1_admin_ace938032bc0375e0658d21b440f98505}{User\+Manager}} = \mbox{\hyperlink{class_library_1_1_singleton}{Singleton}}$<$\mbox{\hyperlink{class_library_1_1_user_manager}{User\+Manager}}$>$.Instance
+\begin{DoxyCompactList}\small\item\em Instancia única de la clase que gestiona las listas de usuarios. utilización del patrón \doxylink{class_library_1_1_singleton}{Singleton}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_library_1_1_usuarios}{Library.\+Usuarios}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_library_1_1_usuarios_a5f78f18368dfa9f539e8b9290ab0583b}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece el nombre del usuario. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_library_1_1_usuarios_a243d1ee310aed8268372889451276cc2}{id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece el ID del usuario. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_library_1_1_usuarios_abf13dc99525513c84c2ce90843587afc}{User}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece el nombre de usuario utilizado para iniciar sesión. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_library_1_1_usuarios_a5aa55a201f0e5e3b925c08b1162b8ae2}{Password}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece la contraseña del usuario. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_library_1_1_usuarios_a735af961d38f7a198acfa513f7a31680}{logged}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece un valor que indica si el usuario está conectado. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_library_1_1_usuarios_ad5ed159fa3e5ee36aa435be417bcc69a}{admin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o establece un valor que indica si el usuario tiene privilegios de administrador. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_library_1_1_usuarios_a33d3a50fc1c68458928b5a4c9c1367f9}{Chat\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_library_1_1_usuarios_a9c41bf848fa8950cae474d7bdccafd6c}{Latitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_library_1_1_usuarios_a0694e51fe8af4920f62de6e000ba4c81}{Longitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa un administrador que hereda de \doxylink{class_library_1_1_usuarios}{Usuarios} e implementa la interfaz \doxylink{interface_library_1_1_i_user}{IUser}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_library_1_1_admin_ac88f23a640df29b7c82d1cf40cd6792f}\index{Library.Admin@{Library.Admin}!AddSupplier@{AddSupplier}}
+\index{AddSupplier@{AddSupplier}!Library.Admin@{Library.Admin}}
+\doxysubsubsection{\texorpdfstring{AddSupplier()}{AddSupplier()}}
+{\footnotesize\ttfamily \label{class_library_1_1_admin_ac88f23a640df29b7c82d1cf40cd6792f} 
+void Library.\+Admin.\+Add\+Supplier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_supplier}{Supplier}}}]{supplier}{}\end{DoxyParamCaption})}
+
+
+
+Agrega un nuevo proveedor a la lista de proveedores registrados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em supplier} & El proveedor que se va a agregar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_library_1_1_admin_a5d1d6fdac7f0b23d9f5c62fb3003cfa4}\index{Library.Admin@{Library.Admin}!AddUser@{AddUser}}
+\index{AddUser@{AddUser}!Library.Admin@{Library.Admin}}
+\doxysubsubsection{\texorpdfstring{AddUser()}{AddUser()}}
+{\footnotesize\ttfamily \label{class_library_1_1_admin_a5d1d6fdac7f0b23d9f5c62fb3003cfa4} 
+void Library.\+Admin.\+Add\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_user}{User}}}]{user}{}\end{DoxyParamCaption})}
+
+
+
+Agrega un nuevo usuario a la lista de usuarios registrados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & El usuario que se va a agregar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_library_1_1_admin_a2c2f0d578c33d3ffb283ce51c17f4994}\index{Library.Admin@{Library.Admin}!NewWarehouse@{NewWarehouse}}
+\index{NewWarehouse@{NewWarehouse}!Library.Admin@{Library.Admin}}
+\doxysubsubsection{\texorpdfstring{NewWarehouse()}{NewWarehouse()}}
+{\footnotesize\ttfamily \label{class_library_1_1_admin_a2c2f0d578c33d3ffb283ce51c17f4994} 
+void Library.\+Admin.\+New\+Warehouse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Llama al menú de gestión de almacenes. 
+
+\Hypertarget{class_library_1_1_admin_a7eaea456ff036241df320c426775408d}\index{Library.Admin@{Library.Admin}!SearchProduct@{SearchProduct}}
+\index{SearchProduct@{SearchProduct}!Library.Admin@{Library.Admin}}
+\doxysubsubsection{\texorpdfstring{SearchProduct()}{SearchProduct()}}
+{\footnotesize\ttfamily \label{class_library_1_1_admin_a7eaea456ff036241df320c426775408d} 
+void Library.\+Admin.\+Search\+Product (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Busca un producto por su código. 
+
+
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_user_ad4703a324db43620db9b3fa37863d83c}{Library.\+IUser}}.
+
+\Hypertarget{class_library_1_1_admin_ac0203ad51aa219491d4daadf41a0ccd1}\index{Library.Admin@{Library.Admin}!ViewSales@{ViewSales}}
+\index{ViewSales@{ViewSales}!Library.Admin@{Library.Admin}}
+\doxysubsubsection{\texorpdfstring{ViewSales()}{ViewSales()}}
+{\footnotesize\ttfamily \label{class_library_1_1_admin_ac0203ad51aa219491d4daadf41a0ccd1} 
+void Library.\+Admin.\+View\+Sales (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Muestra las ventas. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_library_1_1_admin_ace938032bc0375e0658d21b440f98505}\index{Library.Admin@{Library.Admin}!UserManager@{UserManager}}
+\index{UserManager@{UserManager}!Library.Admin@{Library.Admin}}
+\doxysubsubsection{\texorpdfstring{UserManager}{UserManager}}
+{\footnotesize\ttfamily \label{class_library_1_1_admin_ace938032bc0375e0658d21b440f98505} 
+\mbox{\hyperlink{class_library_1_1_user_manager}{User\+Manager}} Library.\+Admin.\+User\+Manager = \mbox{\hyperlink{class_library_1_1_singleton}{Singleton}}$<$\mbox{\hyperlink{class_library_1_1_user_manager}{User\+Manager}}$>$.Instance}
+
+
+
+Instancia única de la clase que gestiona las listas de usuarios. utilización del patrón \doxylink{class_library_1_1_singleton}{Singleton}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\+Users/\mbox{\hyperlink{_admin_8cs}{Admin.\+cs}}\end{DoxyCompactItemize}

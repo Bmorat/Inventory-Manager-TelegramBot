@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "Tomas",
+    "id": 2,
+    "User": "tomy",
+    "Password": "tomy",
+    "logged": true,
+    "admin": false,
+    "ChatId": 6336666195,
+    "Latitude": -34.904763,
+    "Longitude": -56.188953
+  }
+]

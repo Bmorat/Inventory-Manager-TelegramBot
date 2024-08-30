@@ -1,0 +1,159 @@
+\doxysection{Library.\+Telegram\+Bot Class Reference}
+\hypertarget{class_library_1_1_telegram_bot}{}\label{class_library_1_1_telegram_bot}\index{Library.TelegramBot@{Library.TelegramBot}}
+
+
+Clase para gestionar las interacciones con un bot de Telegram. (Bot CORE)(no implementado aún)  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_library_1_1_telegram_bot_a9b235532974f823235e1fccba5ee2f91}{Main}} ()
+\item 
+static async Task \mbox{\hyperlink{class_library_1_1_telegram_bot_a393bed01cc1264f45f5d03af79c8dd0f}{Handle\+Update\+Async}} (ITelegram\+Bot\+Client bot\+Client, Update update, Cancellation\+Token cancellation\+Token)
+\begin{DoxyCompactList}\small\item\em Maneja las actualizaciones recibidas por el bot. \end{DoxyCompactList}\item 
+static Task \mbox{\hyperlink{class_library_1_1_telegram_bot_a0e26289e5cab7a4939474602d34830dc}{Handle\+Error\+Async}} (ITelegram\+Bot\+Client bot\+Client, Exception exception, Cancellation\+Token cancellation\+Token)
+\begin{DoxyCompactList}\small\item\em Maneja los errores que ocurren durante la operación del bot. \end{DoxyCompactList}\item 
+static async Task \mbox{\hyperlink{class_library_1_1_telegram_bot_a55ddb9d89d56b903bb1ec78dd40da773}{Send\+Text\+Message\+Async}} (string message)
+\begin{DoxyCompactList}\small\item\em Envía un mensaje de texto al chat actual. \end{DoxyCompactList}\item 
+static async Task \mbox{\hyperlink{class_library_1_1_telegram_bot_ab0348ae2e39e82dd09b5dd76e0fdbefa}{Send\+Text\+Message\+Async}} (string message, long chatid)
+\begin{DoxyCompactList}\small\item\em Envía un mensaje de texto a un chat específico. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_library_1_1_telegram_bot_abb6ecf7d759f96b06243d89612deb440}{Telegram\+Read\+Line}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_library_1_1_telegram_bot_aab42535b3e3c4c65a14254aaffae331d}{Is\+Logged}} =false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static long \mbox{\hyperlink{class_library_1_1_telegram_bot_a166833a7a0a99d7c9dbf143b991a8a0c}{Chat\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Identificador del chat actual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase para gestionar las interacciones con un bot de Telegram. (Bot CORE)(no implementado aún) 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_library_1_1_telegram_bot_a0e26289e5cab7a4939474602d34830dc}\index{Library.TelegramBot@{Library.TelegramBot}!HandleErrorAsync@{HandleErrorAsync}}
+\index{HandleErrorAsync@{HandleErrorAsync}!Library.TelegramBot@{Library.TelegramBot}}
+\doxysubsubsection{\texorpdfstring{HandleErrorAsync()}{HandleErrorAsync()}}
+{\footnotesize\ttfamily \label{class_library_1_1_telegram_bot_a0e26289e5cab7a4939474602d34830dc} 
+static Task Library.\+Telegram\+Bot.\+Handle\+Error\+Async (\begin{DoxyParamCaption}\item[{ITelegram\+Bot\+Client}]{bot\+Client}{, }\item[{Exception}]{exception}{, }\item[{Cancellation\+Token}]{cancellation\+Token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Maneja los errores que ocurren durante la operación del bot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bot\+Client} & Cliente del bot de Telegram.\\
+\hline
+{\em exception} & Excepción que ocurrió.\\
+\hline
+{\em cancellation\+Token} & Token de cancelación.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tarea completada.
+\end{DoxyReturn}
+\Hypertarget{class_library_1_1_telegram_bot_a393bed01cc1264f45f5d03af79c8dd0f}\index{Library.TelegramBot@{Library.TelegramBot}!HandleUpdateAsync@{HandleUpdateAsync}}
+\index{HandleUpdateAsync@{HandleUpdateAsync}!Library.TelegramBot@{Library.TelegramBot}}
+\doxysubsubsection{\texorpdfstring{HandleUpdateAsync()}{HandleUpdateAsync()}}
+{\footnotesize\ttfamily \label{class_library_1_1_telegram_bot_a393bed01cc1264f45f5d03af79c8dd0f} 
+static async Task Library.\+Telegram\+Bot.\+Handle\+Update\+Async (\begin{DoxyParamCaption}\item[{ITelegram\+Bot\+Client}]{bot\+Client}{, }\item[{Update}]{update}{, }\item[{Cancellation\+Token}]{cancellation\+Token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Maneja las actualizaciones recibidas por el bot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bot\+Client} & Cliente del bot de Telegram.\\
+\hline
+{\em update} & Actualización recibida.\\
+\hline
+{\em cancellation\+Token} & Token de cancelación.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tarea asíncrona.
+\end{DoxyReturn}
+\Hypertarget{class_library_1_1_telegram_bot_a9b235532974f823235e1fccba5ee2f91}\index{Library.TelegramBot@{Library.TelegramBot}!Main@{Main}}
+\index{Main@{Main}!Library.TelegramBot@{Library.TelegramBot}}
+\doxysubsubsection{\texorpdfstring{Main()}{Main()}}
+{\footnotesize\ttfamily \label{class_library_1_1_telegram_bot_a9b235532974f823235e1fccba5ee2f91} 
+static void Library.\+Telegram\+Bot.\+Main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_library_1_1_telegram_bot_a55ddb9d89d56b903bb1ec78dd40da773}\index{Library.TelegramBot@{Library.TelegramBot}!SendTextMessageAsync@{SendTextMessageAsync}}
+\index{SendTextMessageAsync@{SendTextMessageAsync}!Library.TelegramBot@{Library.TelegramBot}}
+\doxysubsubsection{\texorpdfstring{SendTextMessageAsync()}{SendTextMessageAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_library_1_1_telegram_bot_a55ddb9d89d56b903bb1ec78dd40da773} 
+static async Task Library.\+Telegram\+Bot.\+Send\+Text\+Message\+Async (\begin{DoxyParamCaption}\item[{string}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Envía un mensaje de texto al chat actual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Mensaje a enviar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tarea asíncrona.
+\end{DoxyReturn}
+\Hypertarget{class_library_1_1_telegram_bot_ab0348ae2e39e82dd09b5dd76e0fdbefa}\index{Library.TelegramBot@{Library.TelegramBot}!SendTextMessageAsync@{SendTextMessageAsync}}
+\index{SendTextMessageAsync@{SendTextMessageAsync}!Library.TelegramBot@{Library.TelegramBot}}
+\doxysubsubsection{\texorpdfstring{SendTextMessageAsync()}{SendTextMessageAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_library_1_1_telegram_bot_ab0348ae2e39e82dd09b5dd76e0fdbefa} 
+static async Task Library.\+Telegram\+Bot.\+Send\+Text\+Message\+Async (\begin{DoxyParamCaption}\item[{string}]{message}{, }\item[{long}]{chatid}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Envía un mensaje de texto a un chat específico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Mensaje a enviar.\\
+\hline
+{\em chatid} & ID del chat al que se enviará el mensaje.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tarea asíncrona.
+\end{DoxyReturn}
+\Hypertarget{class_library_1_1_telegram_bot_abb6ecf7d759f96b06243d89612deb440}\index{Library.TelegramBot@{Library.TelegramBot}!TelegramReadLine@{TelegramReadLine}}
+\index{TelegramReadLine@{TelegramReadLine}!Library.TelegramBot@{Library.TelegramBot}}
+\doxysubsubsection{\texorpdfstring{TelegramReadLine()}{TelegramReadLine()}}
+{\footnotesize\ttfamily \label{class_library_1_1_telegram_bot_abb6ecf7d759f96b06243d89612deb440} 
+static string Library.\+Telegram\+Bot.\+Telegram\+Read\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_library_1_1_telegram_bot_aab42535b3e3c4c65a14254aaffae331d}\index{Library.TelegramBot@{Library.TelegramBot}!IsLogged@{IsLogged}}
+\index{IsLogged@{IsLogged}!Library.TelegramBot@{Library.TelegramBot}}
+\doxysubsubsection{\texorpdfstring{IsLogged}{IsLogged}}
+{\footnotesize\ttfamily \label{class_library_1_1_telegram_bot_aab42535b3e3c4c65a14254aaffae331d} 
+bool Library.\+Telegram\+Bot.\+Is\+Logged =false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_library_1_1_telegram_bot_a166833a7a0a99d7c9dbf143b991a8a0c}\index{Library.TelegramBot@{Library.TelegramBot}!ChatId@{ChatId}}
+\index{ChatId@{ChatId}!Library.TelegramBot@{Library.TelegramBot}}
+\doxysubsubsection{\texorpdfstring{ChatId}{ChatId}}
+{\footnotesize\ttfamily \label{class_library_1_1_telegram_bot_a166833a7a0a99d7c9dbf143b991a8a0c} 
+long Library.\+Telegram\+Bot.\+Chat\+Id\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Identificador del chat actual. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\mbox{\hyperlink{_telegram_bot_8cs}{Telegram\+Bot.\+cs}}\end{DoxyCompactItemize}

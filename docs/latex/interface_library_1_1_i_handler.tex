@@ -1,0 +1,96 @@
+\doxysection{Library.\+IHandler Interface Reference}
+\hypertarget{interface_library_1_1_i_handler}{}\label{interface_library_1_1_i_handler}\index{Library.IHandler@{Library.IHandler}}
+
+
+Interfaz que define los métodos que deben tener los handlers.  
+
+
+Inheritance diagram for Library.\+IHandler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_library_1_1_i_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_library_1_1_i_handler_a6cb7e9849e5c851d9fd90030e3234d1e}{Cancel}} (Message message)
+\begin{DoxyCompactList}\small\item\em Método para cancelar la operación actual. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_library_1_1_i_handler}{IHandler}} \mbox{\hyperlink{interface_library_1_1_i_handler_abd9d7320dc805f417992ab74f2c70777}{Handle}} (Message message, out string response)
+\begin{DoxyCompactList}\small\item\em Método para manejar el mensaje recibido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_library_1_1_i_handler}{IHandler}} \mbox{\hyperlink{interface_library_1_1_i_handler_ab4125b061c533a7ca935f2c32f8e8f57}{Next}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Propiedad que define el siguiente handler en la cadena de responsabilidad. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfaz que define los métodos que deben tener los handlers. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_library_1_1_i_handler_a6cb7e9849e5c851d9fd90030e3234d1e}\index{Library.IHandler@{Library.IHandler}!Cancel@{Cancel}}
+\index{Cancel@{Cancel}!Library.IHandler@{Library.IHandler}}
+\doxysubsubsection{\texorpdfstring{Cancel()}{Cancel()}}
+{\footnotesize\ttfamily \label{interface_library_1_1_i_handler_a6cb7e9849e5c851d9fd90030e3234d1e} 
+void Library.\+IHandler.\+Cancel (\begin{DoxyParamCaption}\item[{Message}]{message}{}\end{DoxyParamCaption})}
+
+
+
+Método para cancelar la operación actual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & El mensaje asociado con la operación que se desea cancelar.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_library_1_1_base_handler_a6c1e6924d66ca79bf66350c66e83c771}{Library.\+Base\+Handler}}.
+
+\Hypertarget{interface_library_1_1_i_handler_abd9d7320dc805f417992ab74f2c70777}\index{Library.IHandler@{Library.IHandler}!Handle@{Handle}}
+\index{Handle@{Handle}!Library.IHandler@{Library.IHandler}}
+\doxysubsubsection{\texorpdfstring{Handle()}{Handle()}}
+{\footnotesize\ttfamily \label{interface_library_1_1_i_handler_abd9d7320dc805f417992ab74f2c70777} 
+\mbox{\hyperlink{interface_library_1_1_i_handler}{IHandler}} Library.\+IHandler.\+Handle (\begin{DoxyParamCaption}\item[{Message}]{message}{, }\item[{out string}]{response}{}\end{DoxyParamCaption})}
+
+
+
+Método para manejar el mensaje recibido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & El mensaje recibido del usuario.\\
+\hline
+{\em response} & La respuesta que se enviará de vuelta al usuario.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El siguiente handler que puede manejar el mensaje, o {\ttfamily null} si no se puede manejar.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_library_1_1_base_handler_ab22b2fb5cc9e6488901d5a54e3db02af}{Library.\+Base\+Handler}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_library_1_1_i_handler_ab4125b061c533a7ca935f2c32f8e8f57}\index{Library.IHandler@{Library.IHandler}!Next@{Next}}
+\index{Next@{Next}!Library.IHandler@{Library.IHandler}}
+\doxysubsubsection{\texorpdfstring{Next}{Next}}
+{\footnotesize\ttfamily \label{interface_library_1_1_i_handler_ab4125b061c533a7ca935f2c32f8e8f57} 
+\mbox{\hyperlink{interface_library_1_1_i_handler}{IHandler}} Library.\+IHandler.\+Next\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedad que define el siguiente handler en la cadena de responsabilidad. 
+
+
+
+Implemented in \mbox{\hyperlink{class_library_1_1_base_handler_ace6b12d838aa1697edafbca4c19c064e}{Library.\+Base\+Handler}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\+Handlers/\mbox{\hyperlink{_i_handler_8cs}{IHandler.\+cs}}\end{DoxyCompactItemize}

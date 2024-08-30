@@ -1,0 +1,98 @@
+\doxysection{Library.\+Pre\+Remove\+Item\+Handler Class Reference}
+\hypertarget{class_library_1_1_pre_remove_item_handler}{}\label{class_library_1_1_pre_remove_item_handler}\index{Library.PreRemoveItemHandler@{Library.PreRemoveItemHandler}}
+
+
+Handler encargado de preparar el proceso para remover ítems de un depósito.  
+
+
+Inheritance diagram for Library.\+Pre\+Remove\+Item\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_library_1_1_pre_remove_item_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_library_1_1_pre_remove_item_handler_a4479cd80f5e03a14ebeb60c2d14e21a6}{Pre\+Remove\+Item\+Handler}} (\mbox{\hyperlink{class_library_1_1_base_handler}{Base\+Handler}} next)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_library_1_1_pre_remove_item_handler}{Pre\+Remove\+Item\+Handler}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_library_1_1_base_handler}{Library.\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_library_1_1_base_handler_a2679bb9777934a343402143c8c9d3790}{Base\+Handler}} (\mbox{\hyperlink{interface_library_1_1_i_handler}{IHandler}} next)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_library_1_1_base_handler}{Base\+Handler}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_library_1_1_base_handler_a1ef2ab46879d4c0cd867b183d711d7e0}{Base\+Handler}} (string\mbox{[}$\,$\mbox{]} keywords, \mbox{\hyperlink{class_library_1_1_base_handler}{Base\+Handler}} next)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_library_1_1_base_handler}{Base\+Handler} con palabras clave. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_library_1_1_i_handler}{IHandler}} \mbox{\hyperlink{class_library_1_1_base_handler_ab22b2fb5cc9e6488901d5a54e3db02af}{Handle}} (Message message, out string response)
+\begin{DoxyCompactList}\small\item\em Método que maneja el mensaje recibido. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_library_1_1_base_handler_a6c1e6924d66ca79bf66350c66e83c771}{Cancel}} (Message message)
+\begin{DoxyCompactList}\small\item\em Método que cancela el manejo del mensaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_library_1_1_pre_remove_item_handler_a3cf682e5833026bc0c8b67339ed0a678}{Internal\+Handle}} (Message message, out string response)
+\begin{DoxyCompactList}\small\item\em Maneja el mensaje recibido y solicita al usuario que ingrese el nombre del depósito para proceder con la eliminación de ítems. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_library_1_1_base_handler}{Library.\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_library_1_1_base_handler_ac668a48d4257be78d6ab2e72b6e74170}{Internal\+Handle}} (Message message, out string response)
+\begin{DoxyCompactList}\small\item\em Método abstracto que maneja el mensaje recibido. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_library_1_1_base_handler_a1394e0873bf6342ddfc6ab04d80bda33}{Internal\+Cancel}} (Message message)
+\begin{DoxyCompactList}\small\item\em Método que cancela el mensaje. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_library_1_1_base_handler_a77cfb55207412de295f3e038dd63b9a6}{Can\+Handle}} (Message message)
+\begin{DoxyCompactList}\small\item\em Método que verifica si el mensaje puede ser manejado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_library_1_1_base_handler}{Library.\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_library_1_1_i_handler}{IHandler}} \mbox{\hyperlink{class_library_1_1_base_handler_ace6b12d838aa1697edafbca4c19c064e}{Next}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Propiedad que indica el siguiente handler en la cadena de responsabilidad. \end{DoxyCompactList}\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_library_1_1_base_handler_a249c4e9a598923ca5e028c9372e56725}{Keywords}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Palabras clave que este handler puede procesar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_library_1_1_i_handler}{Library.\+IHandler}}}
+
+
+\doxysubsection{Detailed Description}
+Handler encargado de preparar el proceso para remover ítems de un depósito. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_library_1_1_pre_remove_item_handler_a4479cd80f5e03a14ebeb60c2d14e21a6}\index{Library.PreRemoveItemHandler@{Library.PreRemoveItemHandler}!PreRemoveItemHandler@{PreRemoveItemHandler}}
+\index{PreRemoveItemHandler@{PreRemoveItemHandler}!Library.PreRemoveItemHandler@{Library.PreRemoveItemHandler}}
+\doxysubsubsection{\texorpdfstring{PreRemoveItemHandler()}{PreRemoveItemHandler()}}
+{\footnotesize\ttfamily \label{class_library_1_1_pre_remove_item_handler_a4479cd80f5e03a14ebeb60c2d14e21a6} 
+Library.\+Pre\+Remove\+Item\+Handler.\+Pre\+Remove\+Item\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_base_handler}{Base\+Handler}}}]{next}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{class_library_1_1_pre_remove_item_handler}{Pre\+Remove\+Item\+Handler}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next} & El siguiente handler en la cadena de responsabilidad.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_library_1_1_pre_remove_item_handler_a3cf682e5833026bc0c8b67339ed0a678}\index{Library.PreRemoveItemHandler@{Library.PreRemoveItemHandler}!InternalHandle@{InternalHandle}}
+\index{InternalHandle@{InternalHandle}!Library.PreRemoveItemHandler@{Library.PreRemoveItemHandler}}
+\doxysubsubsection{\texorpdfstring{InternalHandle()}{InternalHandle()}}
+{\footnotesize\ttfamily \label{class_library_1_1_pre_remove_item_handler_a3cf682e5833026bc0c8b67339ed0a678} 
+override void Library.\+Pre\+Remove\+Item\+Handler.\+Internal\+Handle (\begin{DoxyParamCaption}\item[{Message}]{message}{, }\item[{out string}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Maneja el mensaje recibido y solicita al usuario que ingrese el nombre del depósito para proceder con la eliminación de ítems. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & El mensaje recibido del usuario.\\
+\hline
+{\em response} & La respuesta que se enviará de vuelta al usuario.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\+Handlers/\mbox{\hyperlink{_pre_remove_item_handler_8cs}{Pre\+Remove\+Item\+Handler.\+cs}}\end{DoxyCompactItemize}

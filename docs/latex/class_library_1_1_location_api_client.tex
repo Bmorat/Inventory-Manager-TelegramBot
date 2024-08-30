@@ -1,0 +1,222 @@
+\doxysection{Library.\+Location\+Api\+Client Class Reference}
+\hypertarget{class_library_1_1_location_api_client}{}\label{class_library_1_1_location_api_client}\index{Library.LocationApiClient@{Library.LocationApiClient}}
+
+
+Un cliente de la API de localización.  
+
+
+Inheritance diagram for Library.\+Location\+Api\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_library_1_1_location_api_client}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ \mbox{\hyperlink{class_library_1_1_location}{Location}} $>$ \mbox{\hyperlink{class_library_1_1_location_api_client_ac014821123a13d991f85e782f49e8dd0}{Get\+Location\+Async}} (string address, string city="{}Montevideo"{}, string department="{}Montevideo"{}, string country="{}Uruguay"{})
+\begin{DoxyCompactList}\small\item\em Obtiene las coordenadas de una dirección. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_library_1_1_location}{Location}} \mbox{\hyperlink{class_library_1_1_location_api_client_a69cf1e4922e6062eea4a21dbd24ff4de}{Get\+Location}} (string address, string city="{}Montevideo"{}, string department="{}Montevideo"{}, string country="{}Uruguay"{})
+\item 
+async Task$<$ \mbox{\hyperlink{class_library_1_1_distance}{Distance}} $>$ \mbox{\hyperlink{class_library_1_1_location_api_client_ac27150835f0453ce71b5bcc890097160}{Get\+Distance\+Async}} (\mbox{\hyperlink{class_library_1_1_location}{Location}} from, \mbox{\hyperlink{class_library_1_1_location}{Location}} to)
+\begin{DoxyCompactList}\small\item\em Obtiene la distancia entre dos coordenadas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_library_1_1_distance}{Distance}} \mbox{\hyperlink{class_library_1_1_location_api_client_a10550b8ffc0e5682f300edca83c4514b}{Get\+Distance}} (\mbox{\hyperlink{class_library_1_1_location}{Location}} from, \mbox{\hyperlink{class_library_1_1_location}{Location}} to)
+\item 
+async Task$<$ \mbox{\hyperlink{class_library_1_1_distance}{Distance}} $>$ \mbox{\hyperlink{class_library_1_1_location_api_client_a7ecc472606f4c82cba11b5064363806b}{Get\+Distance\+Async}} (string from, string to)
+\begin{DoxyCompactList}\small\item\em Obtiene la distancia entre dos direcciones. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_library_1_1_distance}{Distance}} \mbox{\hyperlink{class_library_1_1_location_api_client_ab7aefa7313720c09bc3dd9261f75b091}{Get\+Distance}} (string from, string to)
+\item 
+async Task \mbox{\hyperlink{class_library_1_1_location_api_client_a30636e7d240cc655e2391af8fd3f7fe8}{Download\+Map\+Async}} (double latitude, double longitude, string path, int zoom\+Level=15)
+\begin{DoxyCompactList}\small\item\em Descarga una mapa de una coordenada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_location_api_client_a38329a8b4c8da529a390b3e5eff2998f}{Download\+Map}} (double latitude, double longitude, string path, int zoom\+Level=15)
+\item 
+async Task \mbox{\hyperlink{class_library_1_1_location_api_client_a286ac5368d70b86df8e5502598f5c64e}{Download\+Route\+Async}} (double from\+Latitude, double from\+Longitude, double to\+Latitude, double to\+Longitude, string path)
+\begin{DoxyCompactList}\small\item\em Un mapa con una ruta entre dos coordenadas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_library_1_1_location_api_client_a4c428d085223d028eba1d96808f29acc}{Download\+Route}} (double from\+Latitude, double from\+Longitude, double to\+Latitude, double to\+Longitude, string path)
+\item 
+void \mbox{\hyperlink{class_library_1_1_location_api_client_a1ee3e5d276f6fcd6c4dffe9a32adc1a0}{Dispose}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_library_1_1_location_api_client_a1e4225c3bc3013fbd103c717a2c7c348}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Un cliente de la API de localización. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_library_1_1_location_api_client_a1ee3e5d276f6fcd6c4dffe9a32adc1a0}\index{Library.LocationApiClient@{Library.LocationApiClient}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Library.LocationApiClient@{Library.LocationApiClient}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_library_1_1_location_api_client_a1ee3e5d276f6fcd6c4dffe9a32adc1a0} 
+void Library.\+Location\+Api\+Client.\+Dispose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+
+
+\Hypertarget{class_library_1_1_location_api_client_a1e4225c3bc3013fbd103c717a2c7c348}\index{Library.LocationApiClient@{Library.LocationApiClient}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Library.LocationApiClient@{Library.LocationApiClient}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_library_1_1_location_api_client_a1e4225c3bc3013fbd103c717a2c7c348} 
+virtual void Library.\+Location\+Api\+Client.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+\Hypertarget{class_library_1_1_location_api_client_a38329a8b4c8da529a390b3e5eff2998f}\index{Library.LocationApiClient@{Library.LocationApiClient}!DownloadMap@{DownloadMap}}
+\index{DownloadMap@{DownloadMap}!Library.LocationApiClient@{Library.LocationApiClient}}
+\doxysubsubsection{\texorpdfstring{DownloadMap()}{DownloadMap()}}
+{\footnotesize\ttfamily \label{class_library_1_1_location_api_client_a38329a8b4c8da529a390b3e5eff2998f} 
+void Library.\+Location\+Api\+Client.\+Download\+Map (\begin{DoxyParamCaption}\item[{double}]{latitude}{, }\item[{double}]{longitude}{, }\item[{string}]{path}{, }\item[{int}]{zoom\+Level}{ = {\ttfamily 15}}\end{DoxyParamCaption})}
+
+. 
+
+Versión sincrónica. \Hypertarget{class_library_1_1_location_api_client_a30636e7d240cc655e2391af8fd3f7fe8}\index{Library.LocationApiClient@{Library.LocationApiClient}!DownloadMapAsync@{DownloadMapAsync}}
+\index{DownloadMapAsync@{DownloadMapAsync}!Library.LocationApiClient@{Library.LocationApiClient}}
+\doxysubsubsection{\texorpdfstring{DownloadMapAsync()}{DownloadMapAsync()}}
+{\footnotesize\ttfamily \label{class_library_1_1_location_api_client_a30636e7d240cc655e2391af8fd3f7fe8} 
+async Task Library.\+Location\+Api\+Client.\+Download\+Map\+Async (\begin{DoxyParamCaption}\item[{double}]{latitude}{, }\item[{double}]{longitude}{, }\item[{string}]{path}{, }\item[{int}]{zoom\+Level}{ = {\ttfamily 15}}\end{DoxyParamCaption})}
+
+
+
+Descarga una mapa de una coordenada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em latitude} & La latitud de la coordenada.\\
+\hline
+{\em longitude} & La longitud de la coordenada.\\
+\hline
+{\em path} & La ruta del archivo donde guardar el mapa. El formato es PNG.\\
+\hline
+{\em zoom\+Level} & El nivel de zoom del mapa entre 1 y 20. Es opcional. El valor predeterminado es 15.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una tarea que representa la operación asincrónica. 
+\end{DoxyReturn}
+\Hypertarget{class_library_1_1_location_api_client_a4c428d085223d028eba1d96808f29acc}\index{Library.LocationApiClient@{Library.LocationApiClient}!DownloadRoute@{DownloadRoute}}
+\index{DownloadRoute@{DownloadRoute}!Library.LocationApiClient@{Library.LocationApiClient}}
+\doxysubsubsection{\texorpdfstring{DownloadRoute()}{DownloadRoute()}}
+{\footnotesize\ttfamily \label{class_library_1_1_location_api_client_a4c428d085223d028eba1d96808f29acc} 
+void Library.\+Location\+Api\+Client.\+Download\+Route (\begin{DoxyParamCaption}\item[{double}]{from\+Latitude}{, }\item[{double}]{from\+Longitude}{, }\item[{double}]{to\+Latitude}{, }\item[{double}]{to\+Longitude}{, }\item[{string}]{path}{}\end{DoxyParamCaption})}
+
+Versión sincrónica. \Hypertarget{class_library_1_1_location_api_client_a286ac5368d70b86df8e5502598f5c64e}\index{Library.LocationApiClient@{Library.LocationApiClient}!DownloadRouteAsync@{DownloadRouteAsync}}
+\index{DownloadRouteAsync@{DownloadRouteAsync}!Library.LocationApiClient@{Library.LocationApiClient}}
+\doxysubsubsection{\texorpdfstring{DownloadRouteAsync()}{DownloadRouteAsync()}}
+{\footnotesize\ttfamily \label{class_library_1_1_location_api_client_a286ac5368d70b86df8e5502598f5c64e} 
+async Task Library.\+Location\+Api\+Client.\+Download\+Route\+Async (\begin{DoxyParamCaption}\item[{double}]{from\+Latitude}{, }\item[{double}]{from\+Longitude}{, }\item[{double}]{to\+Latitude}{, }\item[{double}]{to\+Longitude}{, }\item[{string}]{path}{}\end{DoxyParamCaption})}
+
+
+
+Un mapa con una ruta entre dos coordenadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Latitude} & La latitud de la coordenada de origen.\\
+\hline
+{\em from\+Longitude} & La longitu de la coordenada de origen.\\
+\hline
+{\em to\+Latitude} & La latitud de la coordenada de destino.\\
+\hline
+{\em to\+Longitude} & La longitud de la coordenada de destino.\\
+\hline
+{\em path} & La ruta del archivo donde guardar el mapa. Es formato es PNG.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una tarea que representa la operación asincrónica. 
+\end{DoxyReturn}
+\Hypertarget{class_library_1_1_location_api_client_a10550b8ffc0e5682f300edca83c4514b}\index{Library.LocationApiClient@{Library.LocationApiClient}!GetDistance@{GetDistance}}
+\index{GetDistance@{GetDistance}!Library.LocationApiClient@{Library.LocationApiClient}}
+\doxysubsubsection{\texorpdfstring{GetDistance()}{GetDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_library_1_1_location_api_client_a10550b8ffc0e5682f300edca83c4514b} 
+\mbox{\hyperlink{class_library_1_1_distance}{Distance}} Library.\+Location\+Api\+Client.\+Get\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_location}{Location}}}]{from}{, }\item[{\mbox{\hyperlink{class_library_1_1_location}{Location}}}]{to}{}\end{DoxyParamCaption})}
+
+Versión sincrónica. \Hypertarget{class_library_1_1_location_api_client_ab7aefa7313720c09bc3dd9261f75b091}\index{Library.LocationApiClient@{Library.LocationApiClient}!GetDistance@{GetDistance}}
+\index{GetDistance@{GetDistance}!Library.LocationApiClient@{Library.LocationApiClient}}
+\doxysubsubsection{\texorpdfstring{GetDistance()}{GetDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_library_1_1_location_api_client_ab7aefa7313720c09bc3dd9261f75b091} 
+\mbox{\hyperlink{class_library_1_1_distance}{Distance}} Library.\+Location\+Api\+Client.\+Get\+Distance (\begin{DoxyParamCaption}\item[{string}]{from}{, }\item[{string}]{to}{}\end{DoxyParamCaption})}
+
+. 
+
+Versión sincrónica. \Hypertarget{class_library_1_1_location_api_client_ac27150835f0453ce71b5bcc890097160}\index{Library.LocationApiClient@{Library.LocationApiClient}!GetDistanceAsync@{GetDistanceAsync}}
+\index{GetDistanceAsync@{GetDistanceAsync}!Library.LocationApiClient@{Library.LocationApiClient}}
+\doxysubsubsection{\texorpdfstring{GetDistanceAsync()}{GetDistanceAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_library_1_1_location_api_client_ac27150835f0453ce71b5bcc890097160} 
+async Task$<$ \mbox{\hyperlink{class_library_1_1_distance}{Distance}} $>$ Library.\+Location\+Api\+Client.\+Get\+Distance\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_location}{Location}}}]{from}{, }\item[{\mbox{\hyperlink{class_library_1_1_location}{Location}}}]{to}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene la distancia entre dos coordenadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & La coordenada de origen.\\
+\hline
+{\em to} & La coordenada de destino.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La distancia entre las dos coordenadas.
+\end{DoxyReturn}
+\Hypertarget{class_library_1_1_location_api_client_a7ecc472606f4c82cba11b5064363806b}\index{Library.LocationApiClient@{Library.LocationApiClient}!GetDistanceAsync@{GetDistanceAsync}}
+\index{GetDistanceAsync@{GetDistanceAsync}!Library.LocationApiClient@{Library.LocationApiClient}}
+\doxysubsubsection{\texorpdfstring{GetDistanceAsync()}{GetDistanceAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_library_1_1_location_api_client_a7ecc472606f4c82cba11b5064363806b} 
+async Task$<$ \mbox{\hyperlink{class_library_1_1_distance}{Distance}} $>$ Library.\+Location\+Api\+Client.\+Get\+Distance\+Async (\begin{DoxyParamCaption}\item[{string}]{from}{, }\item[{string}]{to}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene la distancia entre dos direcciones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & La dirección de origen.\\
+\hline
+{\em to} & La dirección de destino.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La distancia entre las dos direcciones.
+\end{DoxyReturn}
+\Hypertarget{class_library_1_1_location_api_client_a69cf1e4922e6062eea4a21dbd24ff4de}\index{Library.LocationApiClient@{Library.LocationApiClient}!GetLocation@{GetLocation}}
+\index{GetLocation@{GetLocation}!Library.LocationApiClient@{Library.LocationApiClient}}
+\doxysubsubsection{\texorpdfstring{GetLocation()}{GetLocation()}}
+{\footnotesize\ttfamily \label{class_library_1_1_location_api_client_a69cf1e4922e6062eea4a21dbd24ff4de} 
+\mbox{\hyperlink{class_library_1_1_location}{Location}} Library.\+Location\+Api\+Client.\+Get\+Location (\begin{DoxyParamCaption}\item[{string}]{address}{, }\item[{string}]{city}{ = {\ttfamily "{}Montevideo"{}}, }\item[{string}]{department}{ = {\ttfamily "{}Montevideo"{}}, }\item[{string}]{country}{ = {\ttfamily "{}Uruguay"{}}}\end{DoxyParamCaption})}
+
+Versión sincrónica. \Hypertarget{class_library_1_1_location_api_client_ac014821123a13d991f85e782f49e8dd0}\index{Library.LocationApiClient@{Library.LocationApiClient}!GetLocationAsync@{GetLocationAsync}}
+\index{GetLocationAsync@{GetLocationAsync}!Library.LocationApiClient@{Library.LocationApiClient}}
+\doxysubsubsection{\texorpdfstring{GetLocationAsync()}{GetLocationAsync()}}
+{\footnotesize\ttfamily \label{class_library_1_1_location_api_client_ac014821123a13d991f85e782f49e8dd0} 
+async Task$<$ \mbox{\hyperlink{class_library_1_1_location}{Location}} $>$ Library.\+Location\+Api\+Client.\+Get\+Location\+Async (\begin{DoxyParamCaption}\item[{string}]{address}{, }\item[{string}]{city}{ = {\ttfamily "{}Montevideo"{}}, }\item[{string}]{department}{ = {\ttfamily "{}Montevideo"{}}, }\item[{string}]{country}{ = {\ttfamily "{}Uruguay"{}}}\end{DoxyParamCaption})}
+
+
+
+Obtiene las coordenadas de una dirección. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & La dirección.\\
+\hline
+{\em city} & La ciudad. Es opcional. El valor predeterminado es Montevideo.\\
+\hline
+{\em department} & El departamento, estado, provincia, etc. Es opcional. El valor predeterminado es \`{}ontevideo.\\
+\hline
+{\em country} & El país. Es opcional. El valor predeterminado es Uruguay.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Las coordenadas de la dirección.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bmora/\+One\+Drive/\+Escritorio/\+C\#24/\+PII\+\_\+2024\+\_\+1\+\_\+equipo\+\_\+05/src/\+Library/\+Locations/\mbox{\hyperlink{_location_api_client_8cs}{Location\+Api\+Client.\+cs}}\end{DoxyCompactItemize}

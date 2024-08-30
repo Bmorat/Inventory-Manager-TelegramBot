@@ -1,0 +1,44 @@
+[
+  {
+    "Name": "Comida",
+    "items": {
+      "0": {
+        "Id": 0,
+        "Item": {
+          "Name": "Pollo",
+          "Category": "Comida"
+        },
+        "Quantity": 10
+      }
+    },
+    "warehouse": "Dos"
+  },
+  {
+    "Name": "Hogar",
+    "items": {
+      "0": {
+        "Id": 0,
+        "Item": {
+          "Name": "Heladera",
+          "Category": "Hogar"
+        },
+        "Quantity": 10
+      }
+    },
+    "warehouse": "Dos"
+  },
+  {
+    "Name": "Comida",
+    "items": {
+      "0": {
+        "Id": 0,
+        "Item": {
+          "Name": "Pollo",
+          "Category": "Comida"
+        },
+        "Quantity": 20
+      }
+    },
+    "warehouse": "Central"
+  }
+]
