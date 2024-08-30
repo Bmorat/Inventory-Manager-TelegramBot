@@ -32,7 +32,7 @@ namespace Library
 
         public static void Main()
         {
-            bot = new TelegramBotClient("7353367298:AAFOA7_Ee6OXlRwSlXy-Xb5tTvhFNnUPayw"); // Token del Bot de telegram obtenido mediante BotFather
+            bot = new TelegramBotClient("insert your bot token"); // Token del Bot de telegram obtenido mediante BotFather
 
             LocationApiClient client = new LocationApiClient();
             IAddressFinder finder = new AddressFinder(client);
