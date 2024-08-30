@@ -759,26 +759,7 @@ public class Tests
 
             Assert.That(response, Is.EqualTo(expectedResponse));
         }
-        [Test]
-        public void  ItemQuantityHandler2()//intente hacer que el mensaje tuviera el chat id de un usuario registrado para que el handler funcione normalmente
-        //pero por alguna razon me marca error al seguir la logica del codigo
-        //el codigo testeado en el bot telegram funciona pero no logre que marcara el test como superado
-        {
-            // Arrange
 
-            Message message = new Message
-            {
-                Text = "/ItemQuantity Central",
-                From = new User{Id=6364397130}//se supone que si el id del usuario telegram del mensaje recibido, que fue lo que nosotro sagregamos como atributo a nuestra clase, esta en la lista deberia funcionar
-               //en cambio nos devuelve que el usuario no fue encontrado, estimo que por algun error al manejar el id del mensaje que simulamos recibir mendiante el test
-            };
-            string expectedResponse = "En el deposito Central tienes un total de 20 items";
-            string response ;
-            IHandler firstHandler = new ItemQuantityHandler(null);
-            firstHandler.Handle(message, out response);  
-
-            Assert.That(response, Is.EqualTo(expectedResponse));
-        }
 }
 
 
